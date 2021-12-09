@@ -139,12 +139,24 @@
   color: #222222;
 }
 
+.dr-d .dr-d-t {
+  color: #222222 !important;
+}
+
+.dr-d .dr-d-t:hover {
+  color: #00c8c8 !important;
+}
+
 .dr-d .active {
   color: #00c8c8 !important;
   background-image: url(../img/download-menu-active.svg);
   background-repeat: no-repeat;
   background-size: 13px;
   background-position: bottom  right 100%;
+}
+
+.dr-d a:hover {
+  color: #00c8c8 !important;
 }
 
 .dr-d-t {
@@ -465,5 +477,204 @@ hr {
   background-color: #00c8c8;
   color: #ffffff;
   border-color: #00c8c8;
+}
+
+.footer-bg {
+  background-color: #f8f8f8;
+  padding: 50px 0px 50px 0px;
+}
+
+.footer-head {
+  color: #575153;
+}
+
+.footer-head h3 {
+  font-size: 13px;
+  text-transform: uppercase;
+  font-family: "Montserrat", sans-serif;
+}
+
+.footer-body {
+  color: #727272;
+}
+
+.footer-body ul {
+  padding-left: 0 !important;
+}
+
+.footer-body ul li {
+  list-style: none;
+}
+
+.footer-body ul li a {
+  font-size: 14px;
+  color: #727272;
+  text-decoration: none;
+  font-family: "Montserrat", sans-serif;
+}
+
+.footer-body a {
+  text-decoration: none;
+  color: #727272;
+}
+
+.footer-bottom-1 {
+  background-color: #333;
+  padding: 50px;
+}
+
+.footer-bottom-1 strong {
+  text-transform: uppercase;
+  color: #ffffff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-size: 24px;
+}
+
+.footer-bottom-1 h4 {
+  color: #ffffff;
+  font-size: 24px;
+  text-transform: uppercase;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-weight: normal;
+  font-family: "Montserrat", sans-serif;
+}
+
+.footer-bottom-2 {
+  background-color: #00c8c8;
+  padding: 50px;
+}
+
+.copy-right {
+  background-color: #333;
+  max-width: 100%;
+  padding: 10px;
+}
+
+.copy {
+  color: #999999;
+  font-family: "Montserrat", sans-serif;
+  font-size: 13px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.sc {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding-left: 0 !important;
+}
+
+.sc li {
+  list-style: none;
+  padding: 16px;
+}
+
+.sc li a {
+  color: #fff;
+}
+
+/*------------ brand -------------*/
+.main-section {
+  background-image: url(../img/main-bg.png);
+  width: 100%;
+  height: 100%;
+  padding: calc((200/2880) * 100%) 0;
+  background-size: cover;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-repeat: no-repeat;
+  font-family: "Montserrat", sans-serif;
+}
+
+.main-name {
+  text-transform: uppercase;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.main-name h4 {
+  color: #ffffff;
+  font-weight: 200;
+}
+
+.main-text h6 {
+  font-size: 24px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  color: #fff;
+}
+
+.brand-conatct {
+  font-family: "Montserrat", sans-serif;
+}
+
+.brand-conatct h5 {
+  font-size: 18px;
+  font-weight: 400;
+  text-transform: uppercase;
+  padding-bottom: 10px;
+  color: #727272;
+}
+
+.brand-conatct h6 {
+  font-size: 13px;
+  text-transform: uppercase;
+  font-weight: 400;
+  font-family: "Roboto", sans-serif;
+}
+
+.brand-conatct p {
+  font-size: 15px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  margin-bottom: 0;
+}
+
+.pb-50 {
+  padding-bottom: 50px;
+}
+
+.mt-100 {
+  margin-top: 100px;
+}
+
+.b-logo {
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.b-logo * .img-fluid {
+  margin-right: 20px;
 }
 /*# sourceMappingURL=style.css.map */

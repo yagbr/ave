@@ -1,450 +1,394 @@
 <!DOCTYPE html>
 <html>
-<head>
-  <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-  <title>ave</title>
-  <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
-  <link rel="stylesheet" type="text/css" href="css/style.css">
-  <link rel="stylesheet" type="text/css" href="css/responsive.css">
-  <link rel="stylesheet" type="text/css" href="https://pro.fontawesome.com/releases/v5.15.3/css/all.css">  
+    <title>ave</title>
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+    <link rel="stylesheet" type="text/css" href="css/responsive.css" />
+    <link rel="stylesheet" type="text/css" href="https://pro.fontawesome.com/releases/v5.15.3/css/all.css" />
 
-  <link rel="preconnect" href="https://fonts.gstatic.com">
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet" />
 
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
-  
-</head>
-<body>
-
-   <header>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet" />
+  </head>
+  <body>
+    <header>
       <div class="topbar">
         <div class="container">
           <div class="row">
             <div class="col-lg-6">
-             <div class="currency d-flex justify-contact-center">
-              <label class="my-auto">Currency :</label>
-              <select class="form-select form-select-sm f-select my-auto" aria-label=".form-select-sm example">
-
-               <option selected>GDP</option>
-               <option value="1">GDP</option>
-               <option value="2">INR</option>
-               <option value="3">ERO</option>
-               <option value="4">USD</option>
-               <option value="5">RUB</option>
-               <option value="5">JPY</option>
-                     </select>
-                  </div>
-            </div>
-
-            <div class="col-lg-2  my-auto d-flex  justify-content-center">
-            <div class="re-sign mb-md-0 mb-2">
-              <a href="sign.html"> Register / SignIn </a>
-            </div>
-          </div>
-
-          <div class="col-lg-3 d-flex  justify-content-md-center">
-            <div class="cart my-auto">
-              <i class="fas fa-shopping-cart"></i>
-                 <div class="dropdown drop-d">
-                    <span class="pr-3 empty">empty</span>
-                <button class="btn dropdown-toggle dr-to" type="button" id="dropdownMenuButton2" data-bs-toggle="dropdown" aria-expanded="false">
-                
-                  </button>
-                <ul class="dropdown-menu mx-auto" aria-labelledby="dropdownMenuButton2">
-                  <li><a class="dropdown-item " href="#">cart are ematy</a></li>
-                  
-                </ul>
+              <div class="currency d-flex justify-contact-center">
+                <label class="my-auto">Currency :</label>
+                <select class="form-select form-select-sm f-select my-auto" aria-label=".form-select-sm example">
+                  <option selected>GDP</option>
+                  <option value="1">GDP</option>
+                  <option value="2">INR</option>
+                  <option value="3">ERO</option>
+                  <option value="4">USD</option>
+                  <option value="5">RUB</option>
+                  <option value="5">JPY</option>
+                </select>
               </div>
-
             </div>
-          </div>
 
+            <div class="col-lg-2 my-auto d-flex justify-content-center">
+              <div class="re-sign mb-md-0 mb-2">
+                <a href="sign.html"> Register / SignIn </a>
+              </div>
+            </div>
+
+            <div class="col-lg-3 d-flex justify-content-md-center">
+              <div class="cart my-auto">
+                <i class="fas fa-shopping-cart"></i>
+                <div class="dropdown drop-d">
+                  <span class="pr-3 empty">empty</span>
+                  <button class="btn dropdown-toggle dr-to" type="button" id="dropdownMenuButton2" data-bs-toggle="dropdown" aria-expanded="false"></button>
+                  <ul class="dropdown-menu mx-auto" aria-labelledby="dropdownMenuButton2">
+                    <li><a class="dropdown-item" href="#">cart are ematy</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
-   </header>
+    </header>
 
-   <section>
-    
-    <nav class="navbar navbar-expand-lg navbar-light ">
-  <div class="container">
-    <a class="navbar-brand " href="#"><img src="img/logo.png" class="img-fluid" alt=""></a>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse c-p" id="navbarTogglerDemo02">
-      <ul class="navbar-nav me-auto mb-2 mb-lg-0 mx-auto">
-        <li class="nav-item dropdown dr-d">
-          <a class="nav-link dropdown-toggle active dr-d-t" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-            MENS
-          </a>
-          <ul class="dropdown-menu dr-menu w-auto" aria-labelledby="navbarDropdown">
-           <!--  <li><a class="dropdown-item" href="#">Action</a></li>
+    <section>
+      <nav class="navbar navbar-expand-lg navbar-light">
+        <div class="container">
+          <a class="navbar-brand" href="#"><img src="img/logo.png" class="img-fluid" alt="" /></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse c-p" id="navbarTogglerDemo02">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0 mx-auto">
+              <li class="nav-item dropdown dr-d">
+                <a class="nav-link dropdown-toggle active dr-d-t" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  MENS
+                </a>
+                <ul class="dropdown-menu dr-menu w-auto" aria-labelledby="navbarDropdown">
+                  <!--  <li><a class="dropdown-item" href="#">Action</a></li>
             <li><a class="dropdown-item" href="#">Another action</a></li>
             <li><hr class="dropdown-divider"></li>
             <li><a class="dropdown-item" href="#">Something else here</a></li> -->
-            <div class="dr-m">
-              <ul class="">
-                <li><a href="#" class="ave-d mb-4"></a>casuals</li>
-                <li><a href="">Jackets</a></li>
-                <li><a href="">Hoodies & Sweatshirts</a></li>
-                <li><a href="">Polo Shirts</a></li>
-                <li><a href="">Sportswear</a></li>
-                <li><a href="">Trousers & Chinos</a></li>
-                <li class="mb-3"><a href="">T-Shirts</a></li>
-              </ul>
-                        
-              <ul>
-                <li><a href="#" class="ave-d "></a>Formal</li>
-                <li><a href="">Jackets</a></li>
-                <li><a href=""> Shirts</a></li>
-                <li><a href="">Suits</a></li>
-                
-               
-                <li><a href="">Trousers </a></li>
-                
-              </ul>
+                  <div class="dr-m">
+                    <ul class="">
+                      <li><a href="#" class="ave-d mb-4"></a>casuals</li>
+                      <li><a href="">Jackets</a></li>
+                      <li><a href="">Hoodies & Sweatshirts</a></li>
+                      <li><a href="">Polo Shirts</a></li>
+                      <li><a href="">Sportswear</a></li>
+                      <li><a href="">Trousers & Chinos</a></li>
+                      <li class="mb-3"><a href="">T-Shirts</a></li>
+                    </ul>
 
+                    <ul>
+                      <li><a href="#" class="ave-d"></a>Formal</li>
+                      <li><a href="">Jackets</a></li>
+                      <li><a href=""> Shirts</a></li>
+                      <li><a href="">Suits</a></li>
 
-            <div class="sale  sale-1">
-              <h3>Autumn sale! <span class="up">up to 50% off</span>   </h3>
-            </div>
-            </div>
-             
-            <div class="sale mt-5">
-              <h3>Autumn sale! <span class="up">up to 50% off</span>   </h3>
-            </div>
+                      <li><a href="">Trousers </a></li>
+                    </ul>
 
-          </ul>
-        </li>
-        <li class="nav-item dropdown dr-d">
-          <a class="nav-link dropdown-toggle  dr-d-t" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-            WOMENS
-          </a>
-          <ul class="dropdown-menu dr-menu w-auto" aria-labelledby="navbarDropdown">
-           <!--  <li><a class="dropdown-item" href="#">Action</a></li>
+                    <div class="sale sale-1">
+                      <h3>Autumn sale! <span class="up">up to 50% off</span></h3>
+                    </div>
+                  </div>
+
+                  <div class="sale mt-5">
+                    <h3>Autumn sale! <span class="up">up to 50% off</span></h3>
+                  </div>
+                </ul>
+              </li>
+              <li class="nav-item dropdown dr-d">
+                <a class="nav-link dropdown-toggle dr-d-t" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  WOMENS
+                </a>
+                <ul class="dropdown-menu dr-menu w-auto" aria-labelledby="navbarDropdown">
+                  <!--  <li><a class="dropdown-item" href="#">Action</a></li>
             <li><a class="dropdown-item" href="#">Another action</a></li>
             <li><hr class="dropdown-divider"></li>
             <li><a class="dropdown-item" href="#">Something else here</a></li> -->
-            <div class="dr-m">
-              <ul class="">
-                <li><a href="#" class="ave-d mb-4"></a>casuals</li>
-                <li><a href="">Jackets</a></li>
-                <li><a href="">Hoodies & Sweatshirts</a></li>
-                <li><a href="">Polo Shirts</a></li>
-                <li><a href="">Sportswear</a></li>
-                <li><a href="">Trousers & Chinos</a></li>
-                <li class="mb-3"><a href="">T-Shirts</a></li>
-              </ul>
-                        
-              <ul>
-                <li><a href="#" class="ave-d "></a>Formal</li>
-                <li><a href="">Jackets</a></li>
-                <li><a href=""> Shirts</a></li>
-                <li><a href="">Suits</a></li>
-                
-               
-                <li><a href="">Trousers </a></li>
-                
-              </ul>
+                  <div class="dr-m">
+                    <ul class="">
+                      <li><a href="#" class="ave-d mb-4"></a>casuals</li>
+                      <li><a href="">Jackets</a></li>
+                      <li><a href="">Hoodies & Sweatshirts</a></li>
+                      <li><a href="">Polo Shirts</a></li>
+                      <li><a href="">Sportswear</a></li>
+                      <li><a href="">Trousers & Chinos</a></li>
+                      <li class="mb-3"><a href="">T-Shirts</a></li>
+                    </ul>
 
+                    <ul>
+                      <li><a href="#" class="ave-d"></a>Formal</li>
+                      <li><a href="">Jackets</a></li>
+                      <li><a href=""> Shirts</a></li>
+                      <li><a href="">Suits</a></li>
 
-            <div class="sale  sale-1">
-              <h3>Autumn sale! <span class="up">up to 50% off</span>   </h3>
-            </div>
-            </div>
-             
-            <div class="sale mt-5">
-              <h3>Autumn sale! <span class="up">up to 50% off</span>   </h3>
-            </div>
+                      <li><a href="">Trousers </a></li>
+                    </ul>
 
-          </ul>
-        </li>
-        <li class="nav-item dr-d">
-          <a class="nav-link" href="#" tabindex="-1" >THE BRAND</a>
-        </li>
-         <li class="nav-item dropdown dr-d ">
-          <a class="nav-link dropdown-toggle dr-d-t" href="#"  role="button" data-bs-toggle="dropdown" aria-expanded="false">
-            LOCAL STORES
-          </a>
-          <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-            <li><a class="dropdown-item" href="#">Action</a></li>
-            <li><a class="dropdown-item" href="#">Another action</a></li>
-            <li><hr class="dropdown-divider"></li>
-            <li><a class="dropdown-item" href="#">Something else here</a></li>
-          </ul>
-        </li>
+                    <div class="sale sale-1">
+                      <h3>Autumn sale! <span class="up">up to 50% off</span></h3>
+                    </div>
+                  </div>
 
-         <li class="nav-item dropdown dr-d">
-          <a class="nav-link dropdown-toggle dr-d-t" href="#"  role="button" data-bs-toggle="dropdown" aria-expanded="false">
-            LOOK BOOK
-          </a>
-          <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-            <li><a class="dropdown-item" href="#">Action</a></li>
-            <li><a class="dropdown-item" href="#">Another action</a></li>
-            <li><hr class="dropdown-divider"></li>
-            <li><a class="dropdown-item" href="#">Something else here</a></li>
-          </ul>
-        </li>
-      </ul>
-      <form class="d-flex nav-form">
-        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-        <button class="btn btn-outline-success" type="submit">Search</button>
-      </form>
-    </div>
-  </div>
-</nav>
+                  <div class="sale mt-5">
+                    <h3>Autumn sale! <span class="up">up to 50% off</span></h3>
+                  </div>
+                </ul>
+              </li>
+              <li class="nav-item dr-d">
+                <a class="nav-link" href="#" tabindex="-1">THE BRAND</a>
+              </li>
+              <li class="nav-item dropdown dr-d">
+                <a class="nav-link dropdown-toggle dr-d-t" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  LOCAL STORES
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li><a class="dropdown-item" href="#">Action</a></li>
+                  <li><a class="dropdown-item" href="#">Another action</a></li>
+                  <li><hr class="dropdown-divider" /></li>
+                  <li><a class="dropdown-item" href="#">Something else here</a></li>
+                </ul>
+              </li>
 
-    
-   </section>
-
-
-<div class="main-section">
-  <div class="container">
-     <div class="main-name">
-       <h4>
-        <strong>the</strong>  brand
-        </h4>
-
-
-     </div>
-
-     <div class="main-text">
-       <h6>company slogan goes here</h6>
-     </div>
-  </div>
-</div>
-
-
-<section class="pt-100">
-  <div class="container">
-    <div class="row">
-      <div class="col-lg-6">
-        <img src="img/brand1.png" class="img-fluid pb-50" alt="">
-        <img src="img/brand2.png" class="img-fluid " alt="">
-
-        <div class="brand-conatct mt-4">
-          <h5>our values, vision and strategy</h5>
-          <h6>The above image would be a great place for an advertising video</h6>
-
-          <p>
-            Cras maximus venenatis malesuada. Nulla sagittis elit felis, ac facilisis quam ornare aliquam. Etiam cursus odio vitae dui dignissim, sed tempus lacus tincidunt et donec sapien velit, rhoncus eu nulla a, molestie tempus mi maecenas sagittis ornare.
-Pellentesque sapien mi, tincidunt nec magna vitae, volutpat elementum odioni lorem Aliquam tempor massa vitae augue mattis tempor id in ante ut augue erat, luctus eil.
-          </p>
-        </div>
-          
-        </div>
-
-        <div class="col-lg-6 ">
-                  <div class="brand-conatct mt-5 pb-50">
-          <h5>hand designed clothing</h5>
-          <h6>established in 2013, avenue fashion Sed dictum elit vel sapien luctus eras</h6>
-
-          <p>
-    Praesent feugiat malesuada tristique maecenas rhoncus diam eget quam vestibulim consectetur, id condimentum leo porttitor. Cum sociis natoque penatibus eta magnis disut parturient montes, nascetur ridiculus mus. Donec sem lorem laoreet tempor un risus vitae, rutrum sodales nibh suspendisse congue metus nunc, id viverra elit loreti rhoncus quis consecteur es. Donec pulvinar tempor lorem a pretium justo interdum.
-
-          </p>
-        </div>
-
-        <img src="img/brand3.png" alt="" class="img-fluid">
-
-                     <div class="brand-conatct  mt-4 pb-50">
-          <h5>Ethical trading</h5>
-          <h6>we oversee the working conditions of the people in the supply chain</h6>
-
-          <p>
-            Nullam dapibus consectetur neque, faucibus porttitor purus iaculis sed. Aenean eras dapibus augue, eget dignissim dui maecenas et rhoncus mim, vel semper arcu lorem
-Pellentesque congue justo esteir pellentesque aliquet massa eget posuere tincidunt. Cras viverra ullamcorper nunc accumsan hendrerit. 
-
-          </p>
-
-          <div class="b-logo mt-4 d-md-flex d-block mr-md-5">
-            
-            <img src="img/brand-img.png" alt="" class="img-fluid mr-5">
-            <img src="img/brand-img-1.png" alt="" class="img-fluld">
-             <img src="img/brand-img-2.png" alt="" class="img-fluid">
+              <li class="nav-item dropdown dr-d">
+                <a class="nav-link dropdown-toggle dr-d-t" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  LOOK BOOK
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li><a class="dropdown-item" href="#">Action</a></li>
+                  <li><a class="dropdown-item" href="#">Another action</a></li>
+                  <li><hr class="dropdown-divider" /></li>
+                  <li><a class="dropdown-item" href="#">Something else here</a></li>
+                </ul>
+              </li>
+            </ul>
+            <form class="d-flex nav-form">
+              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" />
+              <button class="btn btn-outline-success" type="submit">Search</button>
+            </form>
           </div>
         </div>
+      </nav>
+    </section>
+
+    <div class="main-section">
+      <div class="container">
+        <div class="main-name">
+          <h4><strong>the</strong> brand</h4>
+        </div>
+
+        <div class="main-text">
+          <h6>company slogan goes here</h6>
         </div>
       </div>
-     
     </div>
 
-</section>
+    <section class="pt-100">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-6">
+            <img src="img/brand1.png" class="img-fluid pb-50" alt="" />
+            <img src="img/brand2.png" class="img-fluid" alt="" />
 
-<footer class="footer-bg pt-100 mt-100 ">
-  <div class="container">
-    <div class="row">
-      <div class="col-lg-2 col-md-4 col-sm-4 pb-24">
-        <div class="footer-section">
-          <div class="footer-head">
-            <h3>Information</h3>
-          </div>
-          <div class="footer-body">
-            <ul>
-              <li><a href="">The brand</a></li>
-              <li><a href="">Local stores</a></li>
-              <li><a href="">Customer service</a></li>
-              <li><a href="">Privacy & cookies</a></li>
-              <li><a href="">Site map</a></li>
-             
+            <div class="brand-conatct mt-4">
+              <h5>our values, vision and strategy</h5>
+              <h6>The above image would be a great place for an advertising video</h6>
 
-                
-            </ul>
-          </div>
-        </div>
-      </div>
-
-
-       <div class="col-lg-2 col-md-4 col-sm-4 pb-24">
-        <div class="footer-section">
-          <div class="footer-head">
-            <h3>Why buy from us</h3>
-          </div>
-          <div class="footer-body">
-            <ul>
-              <li><a href="">Shipping & returns</a></li>
-              <li><a href="">Secure shopping</a></li>
-              <li><a href="">Testimonials</a></li>
-              <li><a href="">Award winning</a></li>
-              <li><a href="">Ethical trading</a></li>
-             
-
-                
-            </ul>
-          </div>
-        </div>
-      </div>
-
-       <div class="col-lg-2 col-md-4 col-sm-4 pb-24">
-        <div class="footer-section">
-          <div class="footer-head">
-            <h3>Your account</h3>
-          </div>
-          <div class="footer-body">
-            <ul>
-              <li><a href="">Sign in</a></li>
-              <li><a href="">Register</a></li>
-              <li><a href="">View cart</a></li>
-              <li><a href="">View your lookbook</a></li>
-              <li><a href="">Track an order</a></li>
-              <li><a href="">Update information</a></li>
-             
-
-                
-            </ul>
-          </div>
-        </div>
-      </div>
-
-
-
-       <div class="col-lg-2 col-md-4 col-sm-4 pb-24">
-        <div class="footer-section">
-          <div class="footer-head">
-            <h3>lookbook</h3>
-          </div>
-          <div class="footer-body">
-            <ul>
-              <li><a href="">Latest posts</a></li>
-              <li><a href="">Men’s lookbook</a></li>
-              <li><a href="">Women’s lookbook</a></li>
-              <li><a href="">Lookbooks RSS feed</a></li>
-              <li><a href="">View your lookbook</a></li>
-              <li><a href="">Delete your lookbook</a></li>
-
-
-
-
-
-
-             
-
-                
-            </ul>
-          </div>
-        </div>
-      </div>
-
-      <div class="col-lg-4 col-md-7 col-sm-7 pb-24">
-           <div class="footer-section">
-          <div class="footer-head">
-            <h3>contact details</h3>
-          </div>
-          <div class="footer-body">
-            <address>Head Office: Avenue Fashion,  180-182 Regent Street, London.</address>
-            <label>Telephone: </label>
-             <a href="tel:+0123-456-789">0123-456-789 </a>
-            <div class="email mt-2">  
-              <label>Email: </label>
-             <a href="mailto:support@yourwebsite.com">support@yourwebsite.com</a>
+              <p>
+                Cras maximus venenatis malesuada. Nulla sagittis elit felis, ac facilisis quam ornare aliquam. Etiam cursus odio vitae dui dignissim, sed tempus lacus tincidunt et donec sapien velit, rhoncus eu nulla a, molestie tempus mi
+                maecenas sagittis ornare. Pellentesque sapien mi, tincidunt nec magna vitae, volutpat elementum odioni lorem Aliquam tempor massa vitae augue mattis tempor id in ante ut augue erat, luctus eil.
+              </p>
             </div>
           </div>
-        </div>
-      </div>
-
-      <div class="col-lg-6 pb-24">
-        <div class="footer-bottom-1 ">
-          <strong>award winner </strong>
-          <h4> fashion awards 2016</h4>
-        </div>
-      </div>
 
           <div class="col-lg-6">
-              <div class="footer-bottom-2">
-       
-           <ul class=" sc">
-            <li><a href=""><i class="fab fa-facebook-f"></i></a></li>
-            <li><a href=""><i class="fab fa-twitter"></i></a></li>
-               <li><a href=""><i class="fab fa-instagram"></i></a></li>
+            <div class="brand-conatct mt-5 pb-50">
+              <h5>hand designed clothing</h5>
+              <h6>established in 2013, avenue fashion Sed dictum elit vel sapien luctus eras</h6>
 
-                  <li><a href="">
-                    
-                  <i class="fab fa-pinterest-p"></i>
-                    </a>
-                  </li>
-          </ul>
-        
-      </div>
-      </div>
+              <p>
+                Praesent feugiat malesuada tristique maecenas rhoncus diam eget quam vestibulim consectetur, id condimentum leo porttitor. Cum sociis natoque penatibus eta magnis disut parturient montes, nascetur ridiculus mus. Donec sem
+                lorem laoreet tempor un risus vitae, rutrum sodales nibh suspendisse congue metus nunc, id viverra elit loreti rhoncus quis consecteur es. Donec pulvinar tempor lorem a pretium justo interdum.
+              </p>
+            </div>
 
-    </div>
+            <img src="img/brand3.png" alt="" class="img-fluid" />
 
+            <div class="brand-conatct mt-4 pb-50">
+              <h5>Ethical trading</h5>
+              <h6>we oversee the working conditions of the people in the supply chain</h6>
 
-  </div>
-</footer>
+              <p>
+                Nullam dapibus consectetur neque, faucibus porttitor purus iaculis sed. Aenean eras dapibus augue, eget dignissim dui maecenas et rhoncus mim, vel semper arcu lorem Pellentesque congue justo esteir pellentesque aliquet massa
+                eget posuere tincidunt. Cras viverra ullamcorper nunc accumsan hendrerit.
+              </p>
 
-<div class="copy-right">
-  <div class="container">
-    <div class="row">
-      <div class="col-lg-6 d-flex justify-content-center align-items-center">
-        <h6 class=" copy mb-lg-0">© 2016 Avenue Fashion™</h6>
-      </div>
-
-      <div class="col-lg-6  align-items-center ">
-        <div class="row ">
-          <div class="col-lg-6  text-xl-start text-center">
-            
-              <h6 class="copy mb-lg-0">Design by RobbyDesigns.com         </h6>
-            
+              <div class="b-logo mt-4 d-md-flex d-block mr-md-5">
+                <img src="img/brand-img.png" alt="" class="img-fluid mr-5" />
+                <img src="img/brand-img-1.png" alt="" class="img-fluld" />
+                <img src="img/brand-img-2.png" alt="" class="img-fluid" />
+              </div>
+            </div>
           </div>
-          <div class="col-lg-6 text-xl-start text-center">
-            <h6 class="copy mb-0"> Dev by Loremipsum.com</h6>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer-bg pt-100 mt-100">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-2 col-md-4 col-sm-4 pb-24">
+            <div class="footer-section">
+              <div class="footer-head">
+                <h3>Information</h3>
+              </div>
+              <div class="footer-body">
+                <ul>
+                  <li><a href="">The brand</a></li>
+                  <li><a href="">Local stores</a></li>
+                  <li><a href="">Customer service</a></li>
+                  <li><a href="">Privacy & cookies</a></li>
+                  <li><a href="">Site map</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-2 col-md-4 col-sm-4 pb-24">
+            <div class="footer-section">
+              <div class="footer-head">
+                <h3>Why buy from us</h3>
+              </div>
+              <div class="footer-body">
+                <ul>
+                  <li><a href="">Shipping & returns</a></li>
+                  <li><a href="">Secure shopping</a></li>
+                  <li><a href="">Testimonials</a></li>
+                  <li><a href="">Award winning</a></li>
+                  <li><a href="">Ethical trading</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-2 col-md-4 col-sm-4 pb-24">
+            <div class="footer-section">
+              <div class="footer-head">
+                <h3>Your account</h3>
+              </div>
+              <div class="footer-body">
+                <ul>
+                  <li><a href="">Sign in</a></li>
+                  <li><a href="">Register</a></li>
+                  <li><a href="">View cart</a></li>
+                  <li><a href="">View your lookbook</a></li>
+                  <li><a href="">Track an order</a></li>
+                  <li><a href="">Update information</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-2 col-md-4 col-sm-4 pb-24">
+            <div class="footer-section">
+              <div class="footer-head">
+                <h3>lookbook</h3>
+              </div>
+              <div class="footer-body">
+                <ul>
+                  <li><a href="">Latest posts</a></li>
+                  <li><a href="">Men’s lookbook</a></li>
+                  <li><a href="">Women’s lookbook</a></li>
+                  <li><a href="">Lookbooks RSS feed</a></li>
+                  <li><a href="">View your lookbook</a></li>
+                  <li><a href="">Delete your lookbook</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-7 col-sm-7 pb-24">
+            <div class="footer-section">
+              <div class="footer-head">
+                <h3>contact details</h3>
+              </div>
+              <div class="footer-body">
+                <address>Head Office: Avenue Fashion, 180-182 Regent Street, London.</address>
+                <label>Telephone: </label>
+                <a href="tel:+0123-456-789">0123-456-789 </a>
+                <div class="email mt-2">
+                  <label>Email: </label>
+                  <a href="mailto:support@yourwebsite.com">support@yourwebsite.com</a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-6 pb-24">
+            <div class="footer-bottom-1">
+              <strong>award winner </strong>
+              <h4>fashion awards 2016</h4>
+            </div>
+          </div>
+
+          <div class="col-lg-6">
+            <div class="footer-bottom-2">
+              <ul class="sc">
+                <li>
+                  <a href=""><i class="fab fa-facebook-f"></i></a>
+                </li>
+                <li>
+                  <a href=""><i class="fab fa-twitter"></i></a>
+                </li>
+                <li>
+                  <a href=""><i class="fab fa-instagram"></i></a>
+                </li>
+
+                <li>
+                  <a href="">
+                    <i class="fab fa-pinterest-p"></i>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <div class="copy-right">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-6 d-flex justify-content-center align-items-center">
+            <h6 class="copy mb-lg-0">© 2016 Avenue Fashion™</h6>
+          </div>
+
+          <div class="col-lg-6 align-items-center">
+            <div class="row">
+              <div class="col-lg-6 text-xl-start text-center">
+                <h6 class="copy mb-lg-0">Design by RobbyDesigns.com</h6>
+              </div>
+              <div class="col-lg-6 text-xl-start text-center">
+                <h6 class="copy mb-0">Dev by Loremipsum.com</h6>
+              </div>
+            </div>
           </div>
         </div>
       </div>
     </div>
-  </div>
-</div>
-   <script type="text/javascript" src="js/bootstrap.bundle.min.js"></script>
-    
-
-   
-    
-</body>
+    <script type="text/javascript" src="js/bootstrap.bundle.min.js"></script>
+  </body>
 </html>

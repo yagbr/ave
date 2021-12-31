@@ -1,0 +1,12 @@
+document.getElemerntById("").style.color = "";
+document.getElemerntById("").onmouseover = function () { (mouseOver) };
+document.getElemerntById("").onmouseout = function () { (mouseOut) };
+
+$("").css("color", "#fff");
+
+$("").hover(function () {
+    $(this).css("", "");
+}, function () {
+    $(this).css("", "");
+
+})

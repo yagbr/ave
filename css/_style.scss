@@ -1,0 +1,204 @@
+$backround-color: #333;
+$color-999: #999999;
+$font-family-montserrat: "Montserrat", sans-serif;
+$primary-color: #00c8c8;
+$color-fff: #fff;
+$color-222: #222222;
+$color-727272: #727272;
+
+
+// .header-top {
+//    background-color: $backround-color;
+// }
+
+// ----- header-top ----- //
+
+.currency {
+   padding: calc(2.813rem/2) 0;
+   color: $color-999;
+   font-size: 0.813rem;
+   font-family: $font-family-montserrat;
+
+    .f-select {
+       color: $color-999;
+       background-image: url(../images/download.svg);
+       font-size: 0.813rem;
+       font-family: $font-family-montserrat;
+    }
+}
+
+.re-sign {
+    a {
+        text-decoration: none;
+        color: $color-999;
+        &:hover{
+            color: $primary-color;
+        }
+    }
+}
+
+.cart {
+    background-color: $primary-color;
+    width: 147px;
+    height: 100%;
+    i{
+        color: $color-fff;
+    }
+
+    @media (max-width: 991px) {
+        margin-bottom: 2.813rem;
+    }
+}
+    
+
+.dr-to{
+    background-image: url(../images/download1.svg);
+    font-family: $font-family-montserrat;
+    background-size: 13px;
+    background-position: top 50% right 0%;
+ 
+    &::after{
+        border: none !important;
+    }
+
+    span{
+        font-size: 13px;
+        color: $color-fff;
+    }
+}
+
+// ----- navbar -----//
+
+.navbar-light {
+	.navbar-nav {
+		.show {
+			>.nav-link {
+				color: $primary-color;
+				font-size: 13px;
+			}
+		}
+
+        .nav-link{
+            font-size: 13px;
+        }
+		.nav-link.active {
+			color: $primary-color;
+			font-size: 13px;
+            position: relative;
+		}
+	}
+}
+
+
+.nav-color {
+    font-size: 13px;
+}
+
+.navbar-light {
+    .navbar-nav {
+        .nav-link{
+            color: $color-222;
+        }
+    }
+}
+
+
+#logo {
+    img {
+        width: 150px;
+    }
+}
+
+.btn:focus {
+    box-shadow: none;
+}
+
+.dr-to1-active{
+    // background-image: url(../images/download-menu-active.svg);
+    // background-size: 10px;
+    // background-position: bottom -0% left 0%;
+    padding-bottom: 0;
+    position: relative;
+    &::after {
+        content: '\f078';
+        font-family: "Font Awesome 5 Pro";
+        font-weight: normal;
+        font-style: normal;
+        font-size: 13px;
+        text-decoration:none;
+        position: absolute;
+        left:0;
+        bottom: -60%;  
+    }
+}
+
+.dr-to1 {
+    // background-image: url(../images/download-menu.svg);
+    // background-size: 10px;
+    // background-position: bottom -0% left 0%;
+    // padding-bottom: 0;
+    position: relative;
+    &::after {
+        content: '\f078';
+        font-family: "Font Awesome 5 Pro";
+        font-weight: normal;
+        font-style: normal;
+        font-size: 13px;
+        text-decoration:none;
+        position: absolute;
+        left:0;
+        bottom: -25%;  
+    }
+}
+
+.dr-to-nav {
+    &::after {
+        border: none !important;
+    }
+}
+
+.form-control{
+    &:focus{
+        border-color: $primary-color;
+    }
+}
+
+.search {
+    color: $color-999;
+}
+
+//--- navbar dropdown ---//
+.dr-menu{
+    padding: 30px;
+    min-width: 467px;
+    
+    box-shadow: 0 10px 35px rgb(0 0 0 / 14%), 0 5px 10px rgb(0 0 0 / 12%);
+
+    @media (max-width: 1440px) {
+        min-width: 360px;
+    }
+}
+
+.dr-m  {
+    ul{
+        li{
+            .nav-dr-color{
+                font-size: 12px;
+                color:$color-727272;
+                font-family: $font-family-montserrat;
+            }
+        }
+    }
+}
+
+.sale{
+    background-color: $backround-color;
+    padding: 63px 0px;
+    h3 {
+        font-size: 36px;
+    }
+
+    .up {
+        font-size: 36px;
+    }
+}

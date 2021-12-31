@@ -1,0 +1,26 @@
+$utilities :(
+    "background-repeat":(
+        property:  background-repeat,
+        class: bg,
+        values: (
+            no-repeat: no-repeat,
+        )
+    ),
+
+    "z-index":(
+        property:  z-index,
+        class: z-in,
+        values: (
+            9999: 9999,
+            -1: -1,
+        )
+    ),
+
+    "box-shadow":(
+        property: box-shadow,
+        class: box-shadow,
+        values: (
+            none: none,
+        )
+    )
+)

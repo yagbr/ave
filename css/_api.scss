@@ -1,3 +1,5 @@
+$font-family-montserrat: "Montserrat", sans-serif;
+
 $utilities :(
     "background-repeat":(
         property:  background-repeat,
@@ -13,6 +15,7 @@ $utilities :(
         values: (
             9999: 9999,
             -1: -1,
+            99: 99,
         )
     ),
 
@@ -22,5 +25,42 @@ $utilities :(
         values: (
             none: none,
         )
-    )
+    ),
+
+    "color":(
+        property: color,
+        class: color,
+        values:(
+           999: #999,
+           fff: #fff,
+           9a9a: #9a9a9a
+        )
+    ),
+
+    "font-family":(
+        property: font-family,
+        class: f-f,
+        values:(
+            montserrat: $font-family-montserrat,
+        )
+    ),
+
+    "background":(
+        property: background-color,
+        class: bg,
+        responsive: true,
+        values:(
+            transparent: transparent,
+
+        )
+    ),
+
+    "cursor":(
+        property: cursor,
+        class: cursor,
+        values:(
+            pointer: pointer,
+        )
+    ),
+
 )

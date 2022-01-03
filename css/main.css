@@ -7586,8 +7586,8 @@ textarea.form-control-lg {
   padding-left: 3rem !important;
 }
 
-.font-monospace {
-  font-family: var(--bs-font-monospace) !important;
+.f-f-montserrat {
+  font-family: "Montserrat", sans-serif !important;
 }
 
 .fs-1 {
@@ -7709,79 +7709,16 @@ textarea.form-control-lg {
 }
 
 /* rtl:end:remove */
-.text-primary {
-  --bs-text-opacity: 1;
-  color: rgba(var(--bs-primary-rgb), var(--bs-text-opacity)) !important;
+.color-999 {
+  color: #999 !important;
 }
 
-.text-secondary {
-  --bs-text-opacity: 1;
-  color: rgba(var(--bs-secondary-rgb), var(--bs-text-opacity)) !important;
+.color-fff {
+  color: #fff !important;
 }
 
-.text-success {
-  --bs-text-opacity: 1;
-  color: rgba(var(--bs-success-rgb), var(--bs-text-opacity)) !important;
-}
-
-.text-info {
-  --bs-text-opacity: 1;
-  color: rgba(var(--bs-info-rgb), var(--bs-text-opacity)) !important;
-}
-
-.text-warning {
-  --bs-text-opacity: 1;
-  color: rgba(var(--bs-warning-rgb), var(--bs-text-opacity)) !important;
-}
-
-.text-danger {
-  --bs-text-opacity: 1;
-  color: rgba(var(--bs-danger-rgb), var(--bs-text-opacity)) !important;
-}
-
-.text-light {
-  --bs-text-opacity: 1;
-  color: rgba(var(--bs-light-rgb), var(--bs-text-opacity)) !important;
-}
-
-.text-dark {
-  --bs-text-opacity: 1;
-  color: rgba(var(--bs-dark-rgb), var(--bs-text-opacity)) !important;
-}
-
-.text-black {
-  --bs-text-opacity: 1;
-  color: rgba(var(--bs-black-rgb), var(--bs-text-opacity)) !important;
-}
-
-.text-white {
-  --bs-text-opacity: 1;
-  color: rgba(var(--bs-white-rgb), var(--bs-text-opacity)) !important;
-}
-
-.text-body {
-  --bs-text-opacity: 1;
-  color: rgba(var(--bs-body-color-rgb), var(--bs-text-opacity)) !important;
-}
-
-.text-muted {
-  --bs-text-opacity: 1;
-  color: #6c757d !important;
-}
-
-.text-black-50 {
-  --bs-text-opacity: 1;
-  color: rgba(0, 0, 0, 0.5) !important;
-}
-
-.text-white-50 {
-  --bs-text-opacity: 1;
-  color: rgba(255, 255, 255, 0.5) !important;
-}
-
-.text-reset {
-  --bs-text-opacity: 1;
-  color: inherit !important;
+.color-9a9a {
+  color: #9a9a9a !important;
 }
 
 .text-opacity-25 {
@@ -7980,8 +7917,20 @@ textarea.form-control-lg {
   z-index: -1 !important;
 }
 
+.z-in-99 {
+  z-index: 99 !important;
+}
+
 .box-shadow-none {
   box-shadow: none !important;
+}
+
+.bg-transparent {
+  background-color: transparent !important;
+}
+
+.cursor-pointer {
+  cursor: pointer !important;
 }
 
 @media (min-width: 576px) {
@@ -8634,6 +8583,10 @@ textarea.form-control-lg {
   .text-sm-center {
     text-align: center !important;
   }
+
+  .bg-sm-transparent {
+    background-color: transparent !important;
+  }
 }
 @media (min-width: 768px) {
   .float-md-start {
@@ -9284,6 +9237,10 @@ textarea.form-control-lg {
 
   .text-md-center {
     text-align: center !important;
+  }
+
+  .bg-md-transparent {
+    background-color: transparent !important;
   }
 }
 @media (min-width: 992px) {
@@ -9936,6 +9893,10 @@ textarea.form-control-lg {
   .text-lg-center {
     text-align: center !important;
   }
+
+  .bg-lg-transparent {
+    background-color: transparent !important;
+  }
 }
 @media (min-width: 1200px) {
   .float-xl-start {
@@ -10586,6 +10547,10 @@ textarea.form-control-lg {
 
   .text-xl-center {
     text-align: center !important;
+  }
+
+  .bg-xl-transparent {
+    background-color: transparent !important;
   }
 }
 @media (min-width: 1400px) {
@@ -11238,6 +11203,10 @@ textarea.form-control-lg {
   .text-xxl-center {
     text-align: center !important;
   }
+
+  .bg-xxl-transparent {
+    background-color: transparent !important;
+  }
 }
 @media (min-width: 1200px) {
   .fs-1 {
@@ -11297,22 +11266,28 @@ textarea.form-control-lg {
     display: none !important;
   }
 }
+.mt-62 {
+  margin-top: 62px;
+}
+
+.mt-54 {
+  margin-top: 54px;
+}
+
 .currency {
   padding: calc(2.813rem/2) 0;
   color: #999999;
   font-size: 0.813rem;
-  font-family: "Montserrat", sans-serif;
 }
 .currency .f-select {
-  color: #999999;
   background-image: url(../images/download.svg);
   font-size: 0.813rem;
-  font-family: "Montserrat", sans-serif;
 }
 
 .re-sign a {
   text-decoration: none;
   color: #999999;
+  font-size: 0.813rem;
 }
 .re-sign a:hover {
   color: #00c8c8;
@@ -11328,13 +11303,14 @@ textarea.form-control-lg {
 }
 @media (max-width: 991px) {
   .cart {
-    margin-bottom: 2.813rem;
+    margin-top: 10px;
+    margin-bottom: 0.813rem;
+    height: 100%;
   }
 }
 
 .dr-to {
   background-image: url(../images/download1.svg);
-  font-family: "Montserrat", sans-serif;
   background-size: 13px;
   background-position: top 50% right 0%;
 }
@@ -11344,6 +11320,24 @@ textarea.form-control-lg {
 .dr-to span {
   font-size: 13px;
   color: #fff;
+}
+
+.dropdown-content {
+  display: none;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.show {
+  display: block;
 }
 
 .navbar-light .navbar-nav .show > .nav-link {
@@ -11390,6 +11384,12 @@ textarea.form-control-lg {
   left: 0;
   bottom: -60%;
 }
+@media (max-width: 991px) {
+  .dr-to1-active::after {
+    left: 90%;
+    bottom: 0%;
+  }
+}
 
 .dr-to1 {
   position: relative;
@@ -11404,6 +11404,12 @@ textarea.form-control-lg {
   position: absolute;
   left: 0;
   bottom: -25%;
+}
+@media (max-width: 991px) {
+  .dr-to1::after {
+    left: 90%;
+    bottom: 25%;
+  }
 }
 
 .dr-to-nav::after {
@@ -11428,11 +11434,15 @@ textarea.form-control-lg {
     min-width: 360px;
   }
 }
+@media (max-width: 991px) {
+  .dr-menu {
+    min-width: 100%;
+  }
+}
 
 .dr-m ul li .nav-dr-color {
   font-size: 12px;
   color: #727272;
-  font-family: "Montserrat", sans-serif;
 }
 
 .sale {
@@ -11448,18 +11458,20 @@ textarea.form-control-lg {
 
 .ave-bg {
   position: relative;
-  top: 0;
-  right: 0;
-  bottom: 0;
 }
 .ave-bg img {
-  position: absolute;
-  top: -72px;
+  margin-top: -72px;
+}
+@media (max-width: 991px) {
+  .ave-bg img {
+    margin-top: 0;
+  }
 }
 .ave-bg .collection {
+  background-color: transparent;
   position: absolute;
-  bottom: -450px;
-  right: 120px;
+  bottom: 20%;
+  right: 15%;
   border: 2px solid #737373;
   padding: 0.375rem 0.75rem;
   font-size: 1rem;
@@ -11478,4 +11490,76 @@ textarea.form-control-lg {
   .ave-bg .collection {
     display: none;
   }
+}
+
+.popular-four {
+  margin-top: -62%;
+}
+.popular-four .thediv img {
+  max-width: 91.2%;
+}
+
+.popular-five {
+  margin-top: -39%;
+}
+
+.popular-six {
+  margin-top: -39%;
+}
+
+.nav-pills .nav-link.active {
+  color: #00c8c8 !important;
+}
+.nav-pills .nav-link-tab {
+  color: #727272;
+}
+
+.thediv {
+  background-color: #f8f8f8;
+  width: 100%;
+}
+
+.popular-price h4, .popular-price .h4 {
+  font-size: 21px;
+  top: 10px;
+  left: 10px;
+}
+.popular-price h4 sup, .popular-price .h4 sup {
+  top: -0.5em;
+  font-size: 0.55em;
+}
+
+.popular-pro {
+  color: #727272;
+  font-size: 13px;
+}
+
+.popular-img .popular-hover {
+  transition: 0.3s linear;
+  background-color: #ffffff;
+  padding: 10px 14px 10px 14px;
+  opacity: 0;
+}
+.popular-img:hover .popular-hover {
+  opacity: 1;
+  width: 100%;
+  padding: 10px 14px 10px 14px;
+}
+
+.popular-text {
+  font-size: 15px;
+  color: #8e8c8c;
+}
+
+.img-c {
+  background-color: #727272;
+}
+.img-c a {
+  color: #fff !important;
+  width: 30px;
+  height: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none !important;
 }/*# sourceMappingURL=main.css.map */

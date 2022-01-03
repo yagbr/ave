@@ -1,0 +1,652 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <!-- <meta http-equiv="X-UA-Compatible" content="IE=edge"> -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/link.css">
+
+    <link rel="stylesheet" type="text/css" href="https://pro.fontawesome.com/releases/v5.15.4/css/all.css">
+    <script src="https://unpkg.com/htmlincludejs"></script>
+
+</head>
+
+<body>
+    <!-- header -->
+    <header>
+        <div class="headertop position-relative" id="headertop">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-6">
+                        <div class="currency d-flex justify-content-center f-f-montserrat">
+                            <label class="my-auto" id="currency"></label>
+                            <select
+                                class="form-select form-select-lg f-select bg-transparent border-0 my-auto w-auto py-0 color-999 f-f-montserrat"
+                                aria-label="Default select example" id="select-id">
+                                <option value="AED">AED</option>
+                                <option value="AFN">AFN</option>
+                                <option value="ALL">ALL</option>
+                                <option value="AMD">AMD</option>
+                                <option value="ANG">ANG</option>
+                                <option value="ANG">AOA</option>
+                                <option value="ARS">ARS</option>
+                                <option value="AUD">AUD</option>
+                                <option value="AWG">AWG</option>
+                                <option value="AZN">AZN</option>
+                                <option value="BAM">BAM</option>
+                                <option value="BBD">BBD</option>
+                                <option value="BDT">BDT</option>
+                                <option value="BGN">BGN</option>
+                                <option value="BHD">BHD</option>
+                                <option value="BIF">BIF</option>
+                                <option value="BMD">BMD</option>
+                                <option value="BND">BND</option>
+                                <option value="BGN">BOB</option>
+                                <option value="BRL">BRL</option>
+                                <option value="BSD">BSD</option>
+                                <option value="BSD">BTN</option>
+                                <option value="BSD">BWP</option>
+                                <option value="BSD">BYR</option>
+                                <option value="BSD">BZD</option>
+                                <option value="CAD">CAD</option>
+                                <option value="CAD">CDF</option>
+                                <option value="CHF">CHF</option>
+                                <option value="CKD">CKD</option>
+                                <option value="CLP">CLP</option>
+                                <option value="CNY">CNY</option>
+                                <option value="COP">COP</option>
+                                <option value="COP">CRC</option>
+                                <option value="COP">CUP</option>
+                                <option value="COP">CVE</option>
+                                <option value="CZK">CZK</option>
+                                <option value="DJF">DJF</option>
+                                <option value="DKK">DKK</option>
+                                <option value="DOP">DOP</option>
+                                <option value="DZD">DZD</option>
+                                <option value="EGP">EGP</option>
+                                <option value="EGP">ERN</option>
+                                <option value="EGP">ETB</option>
+                                <option value="EUR">EUR</option>
+                                <option value="FJD">FJD</option>
+                                <option value="FJD">FKP</option>
+                                <option value="FOK">FOK</option>
+                                <option value="GBP" selected>GBP</option>
+                                <option value="GEL">GEL</option>
+                                <option value="GGP">GGP</option>
+                                <option value="GHS">GHS</option>
+                                <option value="GIP">GIP</option>
+                                <option value="GMD">GMD</option>
+                                <option value="GNF">GNF</option>
+                                <option value="GTQ">GTQ</option>
+                                <option value="GYD">GYD</option>
+                                <option value="HKD">HKD</option>
+                                <option value="HNL">HNL</option>
+                                <option value="HRK">HRK</option>
+                                <option value="HUF">HUF</option>
+                                <option value="IDR">IDR</option>
+                                <option value="ILS">ILS</option>
+                                <option value="IMP">IMP</option>
+                                <option value="INR">INR</option>
+                                <option value="IQD">IQD</option>
+                                <option value="IRR">IRR</option>
+                                <option value="ISK">ISK</option>
+                                <option value="JEP">JEP</option>
+                                <option value="JMD">JMD</option>
+                                <option value="JOD">JOD</option>
+                                <option value="JPY">JPY</option>
+                                <option value="KES">KES</option>
+                                <option value="KGS">KGS</option>
+                                <option value="KHR">KHR</option>
+                                <option value="KID">KID</option>
+                                <option value="KMF">KMF</option>
+                                <option value="KPW">KPW</option>
+                                <option value="KWD">KWD</option>
+                                <option value="KYD">KYD</option>
+                                <option value="LAK">LAK</option>
+                                <option value="LBP">LBP</option>
+                                <option value="LKR">LKR</option>
+                                <option value="LRD">LRD</option>
+                                <option value="LSL">LSL</option>
+                                <option value="LYD">LYD</option>
+                                <option value="MXN">MXN</option>
+                                <option value="MYR">MYR</option>
+                                <option value="NOK">NOK</option>
+                                <option value="NZD">NZD</option>
+                                <option value="PAB">PAB</option>
+                                <option value="PEN">PEN</option>
+                                <option value="PHP">PHP</option>
+                                <option value="PKR">PKR</option>
+                                <option value="PLN">PLN</option>
+                                <option value="PYG">PYG</option>
+                                <option value="RON">RON</option>
+                                <option value="RUB">RUB</option>
+                                <option value="SAR">SAR</option>
+                                <option value="SEK">SEK</option>
+                                <option value="SGD">SGD</option>
+                                <option value="THB">THB</option>
+                                <option value="TRY">TRY</option>
+                                <option value="TWD">TWD</option>
+                                <option value="UAH">UAH</option>
+                                <option value="USD">USD</option>
+                                <option value="UYU">UYU</option>
+                                <option value="VND">VND</option>
+                                <option value="ZAR">ZAR</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-3 my-auto d-flex  justify-content-center">
+                        <div class="re-sign mb-md-0 mb-2">
+                            <a href="sign.html" id="signin"></a>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-3 d-flex justify-content-lg-start justify-content-center mb-lg-0 mb-3">
+                        <div class="cart d-flex justify-content-center align-items-center">
+                            <i class="fas fa-shopping-cart"></i>
+                            <div class="dropdown drop-d">
+
+                                <div class="btn-group d-flex z-in-9999">
+                                    <button type="button"
+                                        class="btn  dropdown-toggle dr-to bg-no-repeat border-none f-f-montserrat"
+                                        data-bs-toggle="dropdown" aria-expanded="false">
+                                        <span>empty</span>
+                                    </button>
+                                    <ul class="dropdown-menu dropdown-menu-end f-f-montserrat">
+                                        <li><a class="dropdown-item" href="" id="empty">empty</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+
+    <!-- navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light mt-lg-3 bg-lg-transparent bg-light">
+        <div class="container-lg container-fluid">
+            <a class="navbar-brand" href="#" id="logo"><img src="images/logo.png" alt="" class="img-fluid"></a>
+            <button class="navbar-toggler box-shadow-none border-0" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse nav-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                    <li class="nav-item dropdown ">
+                        <a class="nav-link dropdown-toggle dr-to1-active bg-no-repeat active dr-to-nav f-f-montserrat"
+                            href="#" id="navbarScrollingDropdown" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            MENS
+                        </a>
+                        <ul class="dropdown-menu  dr-menu w-100 mt-lg-3 mt-2 border-0"
+                            aria-labelledby="navbarScrollingDropdown">
+                            <div class="dr-m">
+                                <div class="row">
+                                    <div class="col-lg-6">
+                                        <ul class="list-unstyled">
+                                            <li class="pb-2">
+                                                <a href="#"
+                                                    class="ave-d mb-4 nav-color fw-normal f-f-montserrat"></a>casuals
+                                            </li>
+                                            <li>
+                                                <a href="#"
+                                                    class="text-decoration-none nav-dr-color fw-light f-f-montserrat">Jackets</a>
+                                            </li>
+                                            <li>
+                                                <a href="#"
+                                                    class="text-decoration-none nav-dr-color fw-light f-f-montserrat">Hoodies
+                                                    &
+                                                    Sweatshirts</a>
+                                            </li>
+                                            <li>
+                                                <a href="#"
+                                                    class="text-decoration-none nav-dr-color fw-light f-f-montserrat">Polo
+                                                    Shirts</a>
+                                            </li>
+                                            <li>
+                                                <a href="#"
+                                                    class="text-decoration-none nav-dr-color fw-light f-f-montserrat">Sportswear</a>
+                                            </li>
+                                            <li>
+                                                <a href="#"
+                                                    class="text-decoration-none nav-dr-color fw-light f-f-montserrat">Trousers
+                                                    &
+                                                    Chinos</a>
+                                            </li>
+                                            <li class="mb-3"><a href=""
+                                                    class="text-decoration-none nav-dr-color f-f-montserrat">T-Shirts</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+
+                                    <div class="col-lg-6">
+                                        <ul class="list-unstyled">
+                                            <li class="pb-2"><a href="#" class="ave-d f-f-montserrat"></a>Formal</li>
+                                            <li><a href=""
+                                                    class="text-decoration-none nav-dr-color f-f-montserrat">Jackets</a>
+                                            </li>
+                                            <li><a href="" class="text-decoration-none nav-dr-color f-f-montserrat">
+                                                    Shirts</a></li>
+                                            <li><a href=""
+                                                    class="text-decoration-none nav-dr-color f-f-montserrat">Suits</a>
+                                            </li>
+                                            <li><a href=""
+                                                    class="text-decoration-none nav-dr-color f-f-montserrat">Trousers
+                                                </a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+
+                                <div class="sale  sale-1 w-100 h-100 text-center text-uppercase mt-5">
+                                    <h3 class="color-fff fw-bold mb-0">Autumn sale! </h3>
+                                    <span class="up color-fff fw-normal">up to 50% off</span>
+                                </div>
+
+                            </div>
+                        </ul>
+                    </li>
+
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle  dr-to-nav  dr-to1 bg-no-repeat text-uppercase nav-color f-f-montserrat"
+                            href="#" id="navbarScrollingDropdown1" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            women
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarScrollingDropdown1">
+                            <li><a class="dropdown-item" href="#">Action</a></li>
+                            <li><a class="dropdown-item" href="#">Another action</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link nav-color f-f-montserrat" href="#">THE BRAND</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link nav-color f-f-montserrat" href="#">LOCAL STORES</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link nav-color f-f-montserrat" href="#">LOOK BOOK</a>
+                    </li>
+                </ul>
+                <form class="d-flex position-relative ms-lg-5">
+                    <input class="form-control me-2 box-shadow-none rounded-0" type="search" placeholder="Search"
+                        aria-label="Search">
+                    <button class="btn search position-absolute end-0 pe-3" type="submit"><i
+                            class="far fa-search"></i></button>
+                </form>
+            </div>
+        </div>
+    </nav>
+
+
+    <!--slider  -->
+    <div class="ave-bg z-in--1">
+        <img src="images/ave-bg.png" alt="" class="img-fluid">
+        <button type="button" class="collection rounded-0  cursor-pointer" id="collection">shop men’s
+            collection</button>
+    </div>
+
+
+    <!-- tabs -->
+    <section>
+        <div class="container">
+            <hr class="mt-62">
+            <ul class="nav nav-pills mb-3 mt-54" id="pills-tab" role="tablist">
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link nav-link-tab active bg-transparent text-uppercase ps-0"
+                        id="pills-popular-tab" data-bs-toggle="pill" data-bs-target="#pills-popular" type="button"
+                        role="tab" aria-controls="pills-home" aria-selected="true">popular</button>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link nav-link-tab text-uppercase bg-transparent" id="pills-arrivals-tab"
+                        data-bs-toggle="pill" data-bs-target="#pills-arrivals" type="button" role="tab"
+                        aria-controls="pills-arrivals" aria-selected="false">new arrivals </button>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link nav-link-tab text-uppercase bg-transparent" id="pills-sellers-tab"
+                        data-bs-toggle="pill" data-bs-target="#pills-sellers" type="button" role="tab"
+                        aria-controls="pills-sellers" aria-selected="false">best sellers</button>
+                </li>
+
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link nav-link-tab text-uppercase bg-transparent" id="pills-offers-tab"
+                        data-bs-toggle="pill" data-bs-target="#pills-offers" type="button" role="tab"
+                        aria-controls="pills-offers" aria-selected="false">special offers</button>
+                </li>
+            </ul>
+            <div class="tab-content" id="pills-tabContent">
+                <div class="tab-pane fade show active" id="pills-popular" role="tabpanel"
+                    aria-labelledby="pills-popular-tab">
+                    <div class="row">
+                        <div class="col-lg-6">
+                            <div class="row">
+                                <div class="col-lg-6">
+                                    <div class="popular">
+                                        <div class="z-in-99">
+                                            <div class="thediv  d-flex justify-content-center"></div>
+                                            <div class="popular-price1">
+                                                <sup>£</sup>89.99
+                                            </div>
+                                            <div class="populer-list text-center mt-3 pb-2">
+                                                <h6 class="popular-pro"></h6>
+                                                <ul
+                                                    class="list-unstyled d-flex justify-content-center align-items-center mb-2">
+                                                    <li class="me-2"></li>
+                                                    <li class="me-2"></li>
+                                                    <li></li>
+                                                </ul>
+
+                                                <p class="popular-text"></p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-lg-6">
+                                    <div class="popular">
+                                        <div class="z-in-99">
+                                            <div class="thediv  d-flex justify-content-center"></div>
+                                            <div class="popular-price1">
+                                                <sup>£</sup>47.50
+                                            </div>
+                                            <div class="populer-list  text-center">
+                                                <h6 class="popular-pro"></h6>
+                                                <ul
+                                                    class="list-unstyled d-flex justify-content-center align-items-center mb-2">
+                                                    <li class="me-2"></li>
+                                                    <li class="me-2"></li>
+                                                    <li></li>
+                                                </ul>
+                                                <p class="popular-text"></p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-6">
+                            <div class="popular">
+                                <div class="z-in-99">
+                                    <div class="thediv d-flex justify-content-center "></div>
+                                    <div class="popular-price1 f-f-montserrat">
+                                        <sup>£</sup><del>107</del>
+                                        <sup>£</sup>89.99
+                                    </div>
+                                    <div class="populer-list text-center">
+                                        <h6 class="popular-pro"></h6>
+                                        <ul class="list-unstyled d-flex justify-content-center align-items-center mb-2">
+                                            <li class="me-2"></li>
+                                            <li class="me-2"></li>
+                                            <li></li>
+                                        </ul>
+                                        <p class="popular-text"></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-6">
+                            <div class="popular">
+                                <div>
+                                    <div class="thediv  d-flex justify-content-center"></div>
+                                    <div class="popular-price1">
+                                        <sup>£</sup>69.95
+                                    </div>
+                                    <div class="populer-list text-center">
+                                        <h6 class="popular-pro"></h6>
+                                        <ul class="list-unstyled d-flex justify-content-center align-items-center mb-2">
+                                            <li class="me-2"></li>
+                                            <li class="me-2"></li>
+                                            <li></li>
+                                        </ul>
+                                        <p class="popular-text"></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <div class="col-lg-6">
+                            <div class="row">
+                                <div class="col-lg-6">
+                                    <div class="popular">
+                                        <div>
+                                            <div class="thediv d-flex justify-content-center"></div>
+                                            <div class="popular-price1">
+                                                <sup>£</sup>29.95
+                                            </div>
+                                            <div class="populer-list text-center">
+                                                <h6 class="popular-pro"></h6>
+                                                <ul
+                                                    class="list-unstyled d-flex justify-content-center align-items-center mb-2">
+                                                    <li class="me-2"></li>
+                                                    <li class="me-2"></li>
+                                                    <li></li>
+                                                </ul>
+                                                <p class="popular-text"></p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-lg-6">
+                                    <div class="popular">
+                                        <div>
+                                            <div class="thediv  d-flex justify-content-center"></div>
+                                            <div class="popular-price1">
+                                                <sup>£</sup>34.79
+                                            </div>
+                                            <div class="populer-list text-center">
+                                                <h6 class="popular-pro"></h6>
+                                                <ul
+                                                    class="list-unstyled d-flex justify-content-center align-items-center mb-2">
+                                                    <li class="me-2"></li>
+                                                    <li class="me-2"></li>
+                                                    <li></li>
+                                                </ul>
+                                                <p class="popular-text"></p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+
+                    </div>
+                </div>
+
+                <div class="tab-pane fade" id="pills-arrivals" role="tabpanel" aria-labelledby="pills-arrivals-tab">...
+                </div>
+                <div class="tab-pane fade" id="pills-sellers" role="tabpanel" aria-labelledby="pills-sellers-tab">...
+                </div>
+                <div class="tab-pane fade" id="pills-offers" role="tabpanel" aria-labelledby="pills-offers-tab">...
+                </div>
+            </div>
+        </div>
+        </div>
+    </section>
+
+
+    <script src="./node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/custom.js"></script>
+    <script src="js/jquery-3.6.0.min.js"></script>
+
+    <!--start:: topbar -->
+    <script>
+        document.getElementById("signin").onmouseover = function () { mouseOur() };
+        document.getElementById("signin").onmouseout = function () { mouseOut() };
+
+        function mouseOur() {
+            document.getElementById("signin").style.color = "#00c8c8";
+        }
+
+        function mouseOut() {
+            document.getElementById("signin").style.color = "#999999";
+        }
+    </script>
+
+    <script>
+        $("#empty").hover(function () {
+            $(this).css("background", "#00c8c8").css("color", "#ffffff");
+        }, function () {
+            $(this).css("background", "transparent").css("color", "#999999");
+
+        })
+    </script>
+
+    <script>
+        document.getElementById("currency").innerHTML = "Currency :";
+        document.getElementById("signin").innerHTML = " Register / SignIn";
+    </script>
+
+    <!-- End:: topbar -->
+
+    <!--start:: navbar -->
+
+    <script>
+        $(".nav-color").hover(function () {
+            $(this).css("color", "#00c8c8");
+        }, function () {
+            $(this).css("color", "#222222");
+        })
+    </script>
+
+    <script>
+        $(".search").hover(function () {
+            $(this).css("color", "#00c8c8");
+        }, function () {
+            $(this).css("color", "#999999");
+
+        })
+    </script>
+
+    <script>
+        $(".nav-dr-color").hover(function () {
+            $(this).css("color", "#00c8c8");
+        }, function () {
+            $(this).css("color", "#727272");
+        })
+    </script>
+
+    <!-- End:: navbar -->
+
+    <!--start:: slider -->
+    <script>
+        $(".collection").hover(function () {
+            $(this).css("border-color", "#00c8c8").css("background", "#00c8c8").css("color", "#ffffff");
+        }, function () {
+            $(this).css("border-color", "#737373").css("background", "transparent").css("color", "#454647");
+        })
+    </script>
+
+    <!-- End:: slider -->
+
+    <!--start:: tab -->
+    <!-- <script>
+        $(".nav-pills.nav-link .active").css("color", "#00c8c8");
+    </script> -->
+
+    <script>
+        $(".nav-link-tab").hover(function () {
+            $(this).css("color", "#00c8c8");
+        }, function () {
+            $(this).css("color", "#727272");
+        })
+    </script>
+
+    <script>
+        $(".popular > div").addClass("popular-img").addClass("position-relative");
+        $(".popular").eq(3).addClass("popular-four");
+        $(".popular").eq(4).addClass("popular-five");
+        $(".popular").eq(5).addClass("popular-six");
+    </script>
+
+    <script>
+        $(".thediv").eq(0).append("<img class='img-fluid' src='images/1.png'>");
+        $(".thediv").eq(1).append("<img class='img-fluid' src='images/3.png'>");
+        $(".thediv").eq(2).append("<img class='img-fluid' src='images/2.png'>");
+        $(".thediv").eq(3).append("<img class='img-fluid' src='images/6.png'>");
+        $(".thediv").eq(4).append("<img class='img-fluid' src='images/4.png'>");
+        $(".thediv").eq(5).append("<img class='img-fluid' src='images/5.png'>");
+
+        $(".popular-text").eq(0).html("Classic casual t-shirt for men on the move. 100% cotton. A h");
+        $(".popular-text").eq(1).html("Classic casual t-shirt for women on the move. 100% cotton. A h");
+        $(".popular-text").eq(2).html("Classic casual t-shirt for men on the move. 100% cotton. A h");
+        $(".popular-text").eq(3).html("Classic casual t-shirt for men on the move. 100% cotton. A h");
+        $(".popular-text").eq(4).html("Classic casual t-shirt for women on the move. 100% cotton. A h");
+        $(".popular-text").eq(5).html("Classic casual t-shirt for women on the move. 100% cotton. A h");
+        $(".popular-text").addClass("f-f-montserrat");
+    </script>
+
+    <script>
+        $(".popular > div > div:nth-child(2n)").addClass("popular-price");
+        $(".popular > div > div:nth-child(3n)").addClass("popular-hover");
+        $(".popular > div > div > div").addClass("popular-body");
+    </script>
+
+    <script>
+        $(".populer-list > ul").addClass("icon");
+        $(".populer-list > ul > li").addClass("img-c").addClass("rounded-circle");
+        $(".populer-list > ul > li:nth-child(1)").wrapInner("<a href=''><i class='fas fa-shopping-cart fa-xs lh-1'></i></a>");
+        $(".populer-list > ul > li:nth-child(2)").wrapInner("<a href=''><i class='fal fa-heart fa-xs lh-1'></i></a>");
+        $(".populer-list > ul > li:nth-child(3)").wrapInner("<a href=''><i class='fas fa-compress-alt fa-xs lh-1'></i></a>");
+    </script>
+
+    <script>
+        $(".img-c").mouseover(function () {
+            $(this).css("background-color", "#00c8c8").css("transition", " 0.3s");
+        }).mouseout(function () {
+            $(this).css("background-color", "#727272");
+        });
+    </script>
+
+    <script>
+        $('.popular-price1').each(function () {
+            $(this).wrapInner('<h4></h4>');
+        })
+    </script>
+
+    <script>
+        $(".popular-price1 > h4").addClass("color-9a9a").addClass("position-absolute").addClass("f-f-montserrat");
+    </script>
+
+    <script>
+        $(".popular-pro").eq(0).html("mens burnt Black Russian casual t-shirt <sup>£</sup>9.99");
+        $(".popular-pro").eq(1).html("womens burnt white casual t-shirt <sup>£</sup>47.50");
+        $(".popular-pro").eq(2).html("mens burnt black casual t-shirt  <sup>£</sup><del>107</del> £89.50");
+        $(".popular-pro").eq(3).html("mens burnt Cyan Sky casual t-shirt <sup>£</sup>69.95");
+        $(".popular-pro").eq(4).html("womens burnt red casual t-shirt <sup>£</sup> 29.95");
+        $(".popular-pro").eq(5).html("womens burnt Black Pearl. casual  <br>t-shirt <sup>£</sup> 39.79");
+    </script>
+
+    <script>
+        $(".popular-img").hover(function () {
+            $(this).css("box-shadow", "0px 0px 9px 0px rgb(0 0 0 / 14%)").css("transition", "0.5s");
+        }, function () {
+            $(this).css("box-shadow", "none");
+        })
+    </script>
+
+
+
+
+
+
+
+
+</body>
+
+</html>

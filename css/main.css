@@ -11496,15 +11496,85 @@ textarea.form-control-lg {
   margin-top: -62%;
 }
 .popular-four .thediv img {
-  max-width: 91.2%;
+  max-width: 90.99%;
+}
+@media (max-width: 2880px) and (min-width: 1729px) {
+  .popular-four .thediv img {
+    max-width: 79.2%;
+  }
+}
+@media (max-width: 1728px) and (min-width: 1368px) {
+  .popular-four .thediv img {
+    max-width: 79.19%;
+  }
+}
+@media (max-width: 1024px) {
+  .popular-four .thediv img {
+    max-width: 100%;
+  }
+}
+@media (max-width: 2880px) and (min-width: 1367px) {
+  .popular-four {
+    margin-top: -45.2%;
+  }
+}
+@media (max-width: 1024px) and (min-width: 992px) {
+  .popular-four {
+    margin-top: -80.2%;
+  }
+}
+@media (max-width: 991px) {
+  .popular-four {
+    margin-top: 5%;
+  }
 }
 
 .popular-five {
   margin-top: -39%;
 }
+@media (max-width: 1024px) and (min-width: 991px) {
+  .popular-five img {
+    max-width: 91.3%;
+  }
+}
+@media (max-width: 2880px) and (min-width: 1367px) {
+  .popular-five {
+    margin-top: -31.5%;
+  }
+}
+@media (max-width: 1024px) and (min-width: 992px) {
+  .popular-five {
+    margin-top: -45%;
+  }
+}
+@media (max-width: 991px) {
+  .popular-five {
+    margin-top: 5%;
+  }
+}
 
 .popular-six {
   margin-top: -39%;
+}
+@media (max-width: 1024px) and (min-width: 991px) {
+  .popular-six img {
+    max-width: 91.3%;
+  }
+}
+@media (max-width: 2880px) and (min-width: 1367px) {
+  .popular-six {
+    margin-top: -31.5%;
+  }
+}
+@media (max-width: 1024px) and (min-width: 992px) {
+  .popular-six {
+    margin-top: -45%;
+  }
+}
+@media (max-width: 991px) {
+  .popular-six {
+    margin-top: 5%;
+  }
 }
 
 .nav-pills .nav-link.active {
@@ -11528,6 +11598,16 @@ textarea.form-control-lg {
   top: -0.5em;
   font-size: 0.55em;
 }
+@media (max-width: 1366px) and (min-width: 1024px) {
+  .popular-price h4, .popular-price .h4 {
+    font-size: 18px;
+  }
+}
+@media (max-width: 1024px) {
+  .popular-price h4, .popular-price .h4 {
+    font-size: 16px;
+  }
+}
 
 .popular-pro {
   color: #727272;
@@ -11546,9 +11626,23 @@ textarea.form-control-lg {
   padding: 10px 14px 10px 14px;
 }
 
+@media (max-width: 991px) {
+  .popular-img .popular-hover {
+    display: none;
+    transition: all 0.5s ease-in;
+  }
+  .popular-img:hover .popular-hover {
+    display: block;
+  }
+}
 .popular-text {
   font-size: 15px;
   color: #8e8c8c;
+}
+@media (max-width: 1366px) {
+  .popular-text {
+    font-size: 12px;
+  }
 }
 
 .img-c {

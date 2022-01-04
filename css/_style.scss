@@ -7,6 +7,7 @@ $color-222: #222222;
 $color-727272: #727272;
 $color-737373: #737373;
 $color-8e8c8c : #8e8c8c;
+$color-f8f8f8: #f8f8f8;
 
 .mt-62{
     margin-top: 62px;
@@ -18,7 +19,7 @@ $color-8e8c8c : #8e8c8c;
 
 // ------------------- Home --------------------- //
 
-// ----- header-top ----- //
+// ----- start::header-top ----- //
 
 .currency {
    padding: calc(2.813rem/2) 0;
@@ -90,7 +91,9 @@ $color-8e8c8c : #8e8c8c;
 
 .show {display:block;}
 
-// ----- navbar -----//
+// ----- end::header-top ----- //
+
+// ----- start:navbar -----//
 
 .navbar-light {
 	.navbar-nav {
@@ -190,7 +193,9 @@ $color-8e8c8c : #8e8c8c;
     color: $color-999;
 }
 
-//--- navbar dropdown ---//
+// ----- end:: navbar ----- //
+
+//--- start:: navbar dropdown ---//
 .dr-menu{
     padding: 30px;
     min-width: 467px;
@@ -229,7 +234,9 @@ $color-8e8c8c : #8e8c8c;
     }
 }
 
-// ----- avg-bg --- //
+//--- end:: navbar dropdown ---//
+
+// ----- start:: avg-bg --- //
 
 .ave-bg {
    position: relative;
@@ -264,10 +271,12 @@ $color-8e8c8c : #8e8c8c;
     }
 }
 
-// tab 
+// ----- end:: avg-bg --- //
+
+// ----- start:: tab --- //
 
 .popular-four{
-    margin-top: -62%;
+    margin-top: -60%;
      .thediv {
          img{
              max-width: 90.99%;
@@ -299,7 +308,7 @@ $color-8e8c8c : #8e8c8c;
 }
 
 .popular-five {
-    margin-top: -39%;
+    margin-top: -35%;
 
     img {
         @media (max-width: 1024px) and (min-width: 991px){
@@ -321,7 +330,7 @@ $color-8e8c8c : #8e8c8c;
 }
 
 .popular-six {
-    margin-top: -39%;
+    margin-top: -35%;
     
     img {
         @media (max-width: 1024px) and (min-width: 991px){
@@ -349,7 +358,6 @@ $color-8e8c8c : #8e8c8c;
     .nav-link-tab{
         color: $color-727272;
     }
-   
 }
 
 .thediv{
@@ -414,7 +422,6 @@ $color-8e8c8c : #8e8c8c;
 	}
 }
 
-
 .popular-text{
     font-size: 15px;
     color: $color-8e8c8c;
@@ -437,6 +444,139 @@ $color-8e8c8c : #8e8c8c;
     }
 }
 
+// ----- end:: tab --- //
 
+// ----- start:: lookbook --- //
+.lookbook-bg{
+    background-color: #f8f8f8;
+    padding:45px 57px 0px 57px;
+    height: 100%;
+   
+
+    @media (max-width: 1440px) and (min-width: 1367px) {
+        padding:35px 26px 0px 26px;
+    }
+
+    @media (max-width:1366px) and (min-width:1025px){
+        padding:35px 23px 0px 24px;
+    }
+
+    @media (max-width: 1024px) {
+        padding:35px 27px 0px 27px;
+    }
+}
+
+.lookbook-img {
+    img{
+        width: 100%;
+        height: 100%;
+        @media (max-width:991px) {
+           width: auto;
+        }
+    }
+}
+
+.lookbook-img1{
+    height: 103%;
+}
+
+.lookbook-title {
+    & > h4{
+        font-size: 48px;
+        font-weight: bold;
+        text-transform: uppercase;
+        color: #575153;
+
+        @media (max-width:1920px) and (min-width:1441px){
+            font-size: 36px;
+        }
+
+        @media (max-width:1440px) and (min-width:376px){
+            font-size: 24px;
+        }
+
+        @media (max-width: 375px) {
+            font-size: 18px;
+        }
+    }
+
+    & > span{
+        font-size: 48px;
+        font-weight: normal;
+        text-transform: uppercase;
+        color: #575153;
+        display: flex;
+        line-height: 1;
+        justify-content: end;
+
+        @media (max-width:1920px) and (min-width:1281px){
+            font-size: 36px;
+        }
+
+        @media (max-width:1440px) and (min-width:376px){
+            font-size: 24px;
+        }
+
+        @media (max-width: 375px) {
+            font-size: 18px;
+        }
+    }
+
+    & > p {
+        font-size: 15px;
+        @media (max-width: 1920px) and (min-width: 1441px) {
+            font-size: 11px;
+        }
+
+        @media (max-width: 1440px) and (min-width:1367px){
+            font-size: 10px;
+        }
+
+        @media (max-width: 1366px){
+            font-size: 9px;
+        }
+    }
+
+    .viewmore {
+        padding: 6px 15px;
+        border: 2px solid $color-737373;
+        font-size: 16px;
+        letter-spacing: 2px;
+        @media (max-width:1366px) and (min-width: 1025px){
+            font-size: 14px;
+        }
+
+        @media (max-width: 1024px) {
+            font-size: 10px;
+            padding: 3px 10px;
+        }
+    }
+
+   
+}
+
+.mr-bottom {
+    margin-top: -10%;
+}
+// ----- end:: lookbook --- //
+
+// ----- start:: footer --- //
+
+.pt-100{
+    margin-top: 100px;
+    @media (max-width:991px) and (min-width:768px){
+        margin-top: 50px;
+    }
+
+    @media (max-width:767px){
+       margin-top: 25px;
+    }
+}
+
+.footer-bg{
+  background-color: $color-f8f8f8;
+  padding: 50px 0px 50px 0px;
+}
+// ----- end:: footer --- //
 
 

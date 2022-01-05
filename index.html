@@ -485,7 +485,7 @@
 
 
     <!-- start:: lookbook -->
-    <section class="mt-5 pt-100">
+    <section class="mt-lg-0 mt-5">
         <div class="container-fluid">
             <div class="row justify-content-center">
                 <div class="col-lg-4 col-md-8 ps-lg-0 mb-lg-0 mb-4">
@@ -558,7 +558,16 @@
 
     <!-- start:: footer -->
     <footer class="footer-bg pt-100">
-
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-2 col-md-4 col-sm-4 pb-24">
+                    <div class="footer-section">
+                        <div></div>
+                        <div></div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </footer>
     <!-- end:: footer -->
 
@@ -746,7 +755,12 @@
     <!--End:: lookbook -->
 
     <!-- start:: footer -->
-
+    <script>
+        $(".footer-section > div:nth-child(1)").addClass("footer-head");
+        $(".footer-section > div:nth-child(2)").addClass("footer-body");
+        $(".footer-head").wrapInner("<h3></h3>");
+        $(".footer-head > h3").html("INFORMATION");
+    </script>
     <!-- end:: footer -->
 
 

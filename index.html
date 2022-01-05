@@ -600,7 +600,14 @@
             </div>
 
             <div class="row">
-                <div class="col-lg-6"></div>
+                <div class="col-lg-6">
+                    <div class="footer-bottom-1 text-uppercase text-center f-f-montserrat"></div>
+                </div>
+                <div class="col-lg-6">
+                    <div
+                        class="footer-bottom-2 text-uppercase text-center f-f-montserrat d-flex justify-content-center">
+                    </div>
+                </div>
             </div>
         </div>
     </footer>
@@ -611,6 +618,9 @@
     <script src="./node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
     <script src="js/custom.js"></script>
     <script src="js/jquery-3.6.0.min.js"></script>
+    <script>
+
+    </script>
 
     <!--start:: topbar -->
     <script>
@@ -818,6 +828,11 @@
         $(".footer-body a").addClass("text-decoration-none").addClass("f-f-montserrat").addClass("fw-light");
         // $(".footer-body a").addClass("text-decoration-none");
 
+        $(".footer-bottom-1").wrapInner("<strong>award winner </strong> <h4> fashion awards 2016</h4>");
+        $(".footer-bottom-1 > h4").addClass("fw-light");
+
+        $(".footer-bottom-2").wrapInner("<ul><li><a href=''><i class='fab fa-facebook-f'></i></a></li><li><a href=''><i class='fab fa-twitter'></i></a></li> <li><a href=''><i class='fab fa-instagram'></i></a></li> <li><a href=''><i class='fab fa-pinterest-p'></i></a></li> </ul>");
+        $(".footer-bottom-2 > ul").addClass("list-unstyled").addClass("d-flex justify-content-center");
     </script>
 
     <script>
@@ -825,6 +840,14 @@
             $(this).css("color", "#00c8c8");
         }, function () {
             $(this).css("color", "#727272");
+        })
+    </script>
+
+    <script>
+        $(".footer-bottom-2 a i").hover(function () {
+            $(this).css("transform", "rotate(20deg)").css("transition", ".2s");
+        }, function () {
+            $(this).css("transform", "rotate(0deg)");
         })
     </script>
     <!-- end:: footer -->

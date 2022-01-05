@@ -11850,4 +11850,28 @@ textarea.form-control-lg {
 .footer-body label {
   font-size: 14px;
   color: #727272;
+}
+
+.footer-bottom-1 {
+  background-color: #333;
+  padding: 50px;
+  color: #fff;
+}
+.footer-bottom-1 strong {
+  font-size: 24px;
+}
+.footer-bottom-1 h4, .footer-bottom-1 .h4 {
+  font-size: 24px;
+}
+
+.footer-bottom-2 {
+  background-color: #00c8c8;
+  padding: 50px;
+  height: 100%;
+}
+.footer-bottom-2 a {
+  color: #fff;
+}
+.footer-bottom-2 li {
+  padding: 16px;
 }/*# sourceMappingURL=main.css.map */

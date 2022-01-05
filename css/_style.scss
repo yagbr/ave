@@ -607,6 +607,35 @@ $color-575153: #575153;
         color:  $color-727272;
     }
 }
+
+.footer-bottom-1{
+    background-color: $backround-color;
+    padding: 50px;
+    color: #fff;
+     strong {
+        font-size: 24px;
+     }
+
+     h4 {
+         font-size: 24px;
+     }
+}
+
+.footer-bottom-2{
+    background-color: $primary-color;
+    padding: 50px; 
+    height: 100%;
+
+    a{
+        color: $color-fff;
+    }
+
+    li{
+        padding: 16px;
+    }
+}
+
+
 // ----- end:: footer --- //
 
 

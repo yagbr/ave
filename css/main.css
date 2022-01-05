@@ -7926,6 +7926,10 @@ textarea.form-control-lg {
   z-index: 99 !important;
 }
 
+.z-in-999 {
+  z-index: 999 !important;
+}
+
 .box-shadow-none {
   box-shadow: none !important;
 }
@@ -11824,4 +11828,26 @@ textarea.form-control-lg {
 .footer-bg {
   background-color: #f8f8f8;
   padding: 50px 0px 50px 0px;
+}
+
+.pb-24 {
+  padding-bottom: 24px;
+}
+
+.footer-head h3, .footer-head .h3 {
+  font-size: 13px;
+  color: #575153;
+}
+
+.footer-body a {
+  font-size: 14px;
+  color: #727272;
+}
+.footer-body address {
+  font-size: 14px;
+  color: #727272;
+}
+.footer-body label {
+  font-size: 14px;
+  color: #727272;
 }/*# sourceMappingURL=main.css.map */

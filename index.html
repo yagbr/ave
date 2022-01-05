@@ -334,7 +334,7 @@
                             <div class="row">
                                 <div class="col-lg-6 mb-lg-0 mb-3">
                                     <div class="popular">
-                                        <div class="z-in-99">
+                                        <div class="z-in-999">
                                             <div class="thediv  d-flex justify-content-center"></div>
                                             <div class="popular-price1">
                                                 <sup>£</sup>89.99
@@ -356,7 +356,7 @@
 
                                 <div class="col-lg-6 mb-lg-0 mb-3">
                                     <div class="popular">
-                                        <div class="z-in-99">
+                                        <div class="z-in-999">
                                             <div class="thediv  d-flex justify-content-center"></div>
                                             <div class="popular-price1">
                                                 <sup>£</sup>47.50
@@ -379,7 +379,7 @@
 
                         <div class="col-lg-6 mb-lg-0">
                             <div class="popular">
-                                <div class="z-in-99">
+                                <div class="z-in-999">
                                     <div class="thediv d-flex justify-content-center "></div>
                                     <div class="popular-price1 f-f-montserrat">
                                         <sup>£</sup><del>107</del>
@@ -564,6 +564,37 @@
                     <div class="footer-section">
                         <div></div>
                         <div></div>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-4 col-sm-4 pb-24">
+                    <div class="footer-section">
+                        <div></div>
+                        <div></div>
+                    </div>
+                </div>
+
+                <div class="col-lg-2 col-md-4 col-sm-4 pb-24">
+                    <div class="footer-section">
+                        <div></div>
+                        <div></div>
+                    </div>
+                </div>
+
+                <div class="col-lg-2 col-md-4 col-sm-4 pb-24">
+                    <div class="footer-section">
+                        <div></div>
+                        <div></div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-7 col-sm-7 pb-24">
+                    <div class="footer-section">
+                        <div></div>
+                        <div>
+                            <div></div>
+                            <div></div>
+                            <div></div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -757,9 +788,40 @@
     <!-- start:: footer -->
     <script>
         $(".footer-section > div:nth-child(1)").addClass("footer-head");
-        $(".footer-section > div:nth-child(2)").addClass("footer-body");
+        $(".footer-section > div:nth-child(2)").addClass("footer-body").addClass("f-f-montserrat");
         $(".footer-head").wrapInner("<h3></h3>");
-        $(".footer-head > h3").html("INFORMATION");
+
+        $(".footer-head > h3").eq(0).html("INFORMATION");
+        $(".footer-body").eq(0).wrapInner("<ul><li><a href=''>The brand</a></li><li><a href=''>Local stores</a></li><li><a href=''>Customer service</a></li> <li><a href=''>Privacy & cookies</a></li>  <li><a href=''>Site map</a></li></ul>");
+        $(".footer-head > h3").eq(1).html("Why buy from us");
+        $(".footer-body").eq(1).wrapInner("<ul><li><a href=''>Shipping & returns</a></li><li><a href=''>Secure shopping</a></li><li><a href=''>Testimonials</a></li> <li><a href=''>Award winning</a></li>  <li><a href=''>Ethical trading</a></li></ul>");
+        $(".footer-head > h3").eq(2).html("YOUR ACCOUNT");
+        $(".footer-body").eq(2).wrapInner("<ul><li><a href=''>Sign in</a></li><li><a href=''>Register</a></li><li><a href=''>View cart</a></li> <li><a href=''>View your lookbook</a></li>  <li><a href=''>Track an order</a></li> <li><a href=''>Update information</a></li></ul>");
+        $(".footer-head > h3").eq(3).html("LOOKBOOK");
+        $(".footer-body").eq(3).wrapInner("<ul><li><a href=''>Latest posts</a></li><li><a href=''>Men’s lookbook</a></li><li><a href=''>Women’s lookbook</a></li> <li><a href=''>Lookbooks RSS feed</a></li>  <li><a href=''>View your lookbook</a></li> <li><a href=''>Delete your lookbook</a></li></ul>");
+        $(".footer-head > h3").eq(4).html("CONTACT DETAILS");
+
+        $(".footer-section > .footer-body > div:nth-child(1)").addClass("address");
+        $(".footer-section > .footer-body > div:nth-child(2)").addClass("telephone");
+        $(".footer-section > .footer-body > div:nth-child(3)").addClass("email");
+        $(".footer-body > .address").wrapInner("<address>Head Office: Avenue Fashion,  180-182 Regent Street, London.</address>");
+        $(".footer-body > .telephone").wrapInner("<label>Telephone: </label> <a href='tel:+0123-456-789'>0123-456-789 </a>");
+        $(".footer-body > .email").wrapInner("<label>Email: </label> </label> <a href='mailto:support@yourwebsite.com'>support@yourwebsite.com</a>");
+        $(".footer-head > h3").addClass("text-uppercase").addClass("fw-normal");
+        $(".footer-body > ul").addClass("list-unstyled");
+
+
+        $(".footer-body a").addClass("text-decoration-none").addClass("f-f-montserrat").addClass("fw-light");
+        // $(".footer-body a").addClass("text-decoration-none");
+
+    </script>
+
+    <script>
+        $(".footer-body a").hover(function () {
+            $(this).css("color", "#00c8c8");
+        }, function () {
+            $(this).css("color", "#727272");
+        })
     </script>
     <!-- end:: footer -->
 

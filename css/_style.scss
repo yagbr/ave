@@ -8,7 +8,7 @@ $color-727272: #727272;
 $color-737373: #737373;
 $color-8e8c8c : #8e8c8c;
 $color-f8f8f8: #f8f8f8;
-
+$color-575153: #575153;
 .mt-62{
     margin-top: 62px;
 }
@@ -581,6 +581,31 @@ $color-f8f8f8: #f8f8f8;
 
 .pb-24 {
     padding-bottom: 24px;
+}
+
+.footer-head {
+    h3{
+        font-size: 13px;
+        color:  $color-575153;
+        
+    }
+}
+
+.footer-body {
+    a{
+        font-size: 14px;
+        color:  $color-727272;
+    }
+
+    address {
+        font-size: 14px;
+        color:  $color-727272;
+    }
+
+    label {
+        font-size: 14px;
+        color:  $color-727272;
+    }
 }
 // ----- end:: footer --- //
 

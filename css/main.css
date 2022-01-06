@@ -11485,8 +11485,23 @@ textarea.form-control-lg {
 .sale h3, .sale .h3 {
   font-size: 36px;
 }
+@media (max-width: 991px) {
+  .sale h3, .sale .h3 {
+    font-size: 24px;
+  }
+}
 .sale .up {
   font-size: 36px;
+}
+@media (max-width: 991px) {
+  .sale .up {
+    font-size: 24px;
+  }
+}
+@media (max-width: 767px) {
+  .sale {
+    padding: 24px;
+  }
 }
 
 .ave-bg {

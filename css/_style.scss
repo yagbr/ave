@@ -226,11 +226,22 @@ $color-575153: #575153;
     background-color: $backround-color;
     padding: 63px 0px;
     h3 {
-        font-size: 36px;
+        font-size: 36px; 
+        @media (max-width:991px) {
+            font-size: 24px;
+        }
+
     }
 
     .up {
         font-size: 36px;
+        @media (max-width:991px) {
+            font-size: 24px;
+        }
+    }
+
+    @media (max-width:767px) {
+        padding: 24px;
     }
 }
 

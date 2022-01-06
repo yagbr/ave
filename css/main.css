@@ -11916,4 +11916,65 @@ textarea.form-control-lg {
 
 .pb-50 {
   padding-bottom: 50px;
+}
+@media (max-width: 1366px) and (min-width: 1025px) {
+  .pb-50 {
+    padding-bottom: 25px;
+  }
+}
+@media (max-width: 1024px) {
+  .pb-50 {
+    padding-bottom: 22px;
+  }
+}
+
+.brand-conatct h5, .brand-conatct .h5 {
+  font-size: 18px;
+  color: #575153;
+}
+@media (max-width: 1366px) and (min-width: 429px) {
+  .brand-conatct h5, .brand-conatct .h5 {
+    font-size: 16px;
+  }
+}
+@media (max-width: 428px) {
+  .brand-conatct h5, .brand-conatct .h5 {
+    font-size: 14px;
+  }
+}
+.brand-conatct h6, .brand-conatct .h6 {
+  font-size: 13px;
+  color: #727272;
+}
+@media (max-width: 1366px) and (min-width: 1025px) {
+  .brand-conatct h6, .brand-conatct .h6 {
+    font-size: 12px;
+  }
+}
+@media (max-width: 1024px) and (min-width: 429px) {
+  .brand-conatct h6, .brand-conatct .h6 {
+    font-size: 10px;
+  }
+}
+@media (max-width: 428px) {
+  .brand-conatct h6, .brand-conatct .h6 {
+    font-size: 8px;
+  }
+}
+.brand-conatct p {
+  font-size: 15px;
+  color: #8e8c8c;
+}
+@media (max-width: 1366px) and (min-width: 429px) {
+  .brand-conatct p {
+    font-size: 13px;
+  }
+}
+@media (max-width: 428px) {
+  .brand-conatct p {
+    font-size: 12px;
+  }
+}
+.brand-conatct p span {
+  color: #00c8c8;
 }/*# sourceMappingURL=main.css.map */

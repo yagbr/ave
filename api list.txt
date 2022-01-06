@@ -20,5 +20,7 @@ bg-md-transparent
 bg-lg-transparent
 bg-xl-transparent
 bg-xxl-transparent
+bg-img-main-img
+bg-size-cover
  
 cursor-pointer

@@ -1,0 +1,596 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <!-- <meta http-equiv="X-UA-Compatible" content="IE=edge"> -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/link.css">
+
+    <link rel="stylesheet" type="text/css" href="https://pro.fontawesome.com/releases/v5.15.4/css/all.css">
+    <script src="https://unpkg.com/htmlincludejs"></script>
+
+</head>
+
+<body>
+    <!-- start::header -->
+    <header>
+        <div class="headertop position-relative" id="headertop">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-6">
+                        <div class="currency d-flex justify-content-center f-f-montserrat">
+                            <label class="my-auto" id="currency"></label>
+                            <select
+                                class="form-select form-select-lg f-select bg-transparent border-0 my-auto w-auto py-0 color-999 f-f-montserrat"
+                                aria-label="Default select example" id="select-id">
+                                <option value="AED">AED</option>
+                                <option value="AFN">AFN</option>
+                                <option value="ALL">ALL</option>
+                                <option value="AMD">AMD</option>
+                                <option value="ANG">ANG</option>
+                                <option value="ANG">AOA</option>
+                                <option value="ARS">ARS</option>
+                                <option value="AUD">AUD</option>
+                                <option value="AWG">AWG</option>
+                                <option value="AZN">AZN</option>
+                                <option value="BAM">BAM</option>
+                                <option value="BBD">BBD</option>
+                                <option value="BDT">BDT</option>
+                                <option value="BGN">BGN</option>
+                                <option value="BHD">BHD</option>
+                                <option value="BIF">BIF</option>
+                                <option value="BMD">BMD</option>
+                                <option value="BND">BND</option>
+                                <option value="BGN">BOB</option>
+                                <option value="BRL">BRL</option>
+                                <option value="BSD">BSD</option>
+                                <option value="BSD">BTN</option>
+                                <option value="BSD">BWP</option>
+                                <option value="BSD">BYR</option>
+                                <option value="BSD">BZD</option>
+                                <option value="CAD">CAD</option>
+                                <option value="CAD">CDF</option>
+                                <option value="CHF">CHF</option>
+                                <option value="CKD">CKD</option>
+                                <option value="CLP">CLP</option>
+                                <option value="CNY">CNY</option>
+                                <option value="COP">COP</option>
+                                <option value="COP">CRC</option>
+                                <option value="COP">CUP</option>
+                                <option value="COP">CVE</option>
+                                <option value="CZK">CZK</option>
+                                <option value="DJF">DJF</option>
+                                <option value="DKK">DKK</option>
+                                <option value="DOP">DOP</option>
+                                <option value="DZD">DZD</option>
+                                <option value="EGP">EGP</option>
+                                <option value="EGP">ERN</option>
+                                <option value="EGP">ETB</option>
+                                <option value="EUR">EUR</option>
+                                <option value="FJD">FJD</option>
+                                <option value="FJD">FKP</option>
+                                <option value="FOK">FOK</option>
+                                <option value="GBP" selected>GBP</option>
+                                <option value="GEL">GEL</option>
+                                <option value="GGP">GGP</option>
+                                <option value="GHS">GHS</option>
+                                <option value="GIP">GIP</option>
+                                <option value="GMD">GMD</option>
+                                <option value="GNF">GNF</option>
+                                <option value="GTQ">GTQ</option>
+                                <option value="GYD">GYD</option>
+                                <option value="HKD">HKD</option>
+                                <option value="HNL">HNL</option>
+                                <option value="HRK">HRK</option>
+                                <option value="HUF">HUF</option>
+                                <option value="IDR">IDR</option>
+                                <option value="ILS">ILS</option>
+                                <option value="IMP">IMP</option>
+                                <option value="INR">INR</option>
+                                <option value="IQD">IQD</option>
+                                <option value="IRR">IRR</option>
+                                <option value="ISK">ISK</option>
+                                <option value="JEP">JEP</option>
+                                <option value="JMD">JMD</option>
+                                <option value="JOD">JOD</option>
+                                <option value="JPY">JPY</option>
+                                <option value="KES">KES</option>
+                                <option value="KGS">KGS</option>
+                                <option value="KHR">KHR</option>
+                                <option value="KID">KID</option>
+                                <option value="KMF">KMF</option>
+                                <option value="KPW">KPW</option>
+                                <option value="KWD">KWD</option>
+                                <option value="KYD">KYD</option>
+                                <option value="LAK">LAK</option>
+                                <option value="LBP">LBP</option>
+                                <option value="LKR">LKR</option>
+                                <option value="LRD">LRD</option>
+                                <option value="LSL">LSL</option>
+                                <option value="LYD">LYD</option>
+                                <option value="MXN">MXN</option>
+                                <option value="MYR">MYR</option>
+                                <option value="NOK">NOK</option>
+                                <option value="NZD">NZD</option>
+                                <option value="PAB">PAB</option>
+                                <option value="PEN">PEN</option>
+                                <option value="PHP">PHP</option>
+                                <option value="PKR">PKR</option>
+                                <option value="PLN">PLN</option>
+                                <option value="PYG">PYG</option>
+                                <option value="RON">RON</option>
+                                <option value="RUB">RUB</option>
+                                <option value="SAR">SAR</option>
+                                <option value="SEK">SEK</option>
+                                <option value="SGD">SGD</option>
+                                <option value="THB">THB</option>
+                                <option value="TRY">TRY</option>
+                                <option value="TWD">TWD</option>
+                                <option value="UAH">UAH</option>
+                                <option value="USD">USD</option>
+                                <option value="UYU">UYU</option>
+                                <option value="VND">VND</option>
+                                <option value="ZAR">ZAR</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-3 my-auto d-flex  justify-content-center">
+                        <div class="re-sign mb-md-0 mb-2">
+                            <a href="sign.html" id="signin"></a>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-3 d-flex justify-content-lg-start justify-content-center mb-lg-0 mb-3">
+                        <div class="cart d-flex justify-content-center align-items-center">
+                            <i class="fas fa-shopping-cart"></i>
+                            <div class="dropdown drop-d">
+
+                                <div class="btn-group d-flex z-in-9999">
+                                    <button type="button"
+                                        class="btn  dropdown-toggle dr-to bg-no-repeat border-none f-f-montserrat"
+                                        data-bs-toggle="dropdown" aria-expanded="false">
+                                        <span>empty</span>
+                                    </button>
+                                    <ul class="dropdown-menu dropdown-menu-end f-f-montserrat">
+                                        <li><a class="dropdown-item" href="" id="empty">empty</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- end:: header -->
+
+    <!-- start:: navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light mt-lg-3 bg-lg-transparent bg-light">
+        <div class="container-lg container-fluid">
+            <a class="navbar-brand" href="#" id="logo"><img src="images/logo.png" alt="" class="img-fluid"></a>
+            <button class="navbar-toggler box-shadow-none border-0" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse nav-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                    <li class="nav-item dropdown ">
+                        <a class="nav-link dropdown-toggle  nav-color dr-to1 bg-no-repeat dr-to-nav f-f-montserrat"
+                            href="#" id="navbarScrollingDropdown" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            MENS
+                        </a>
+                        <ul class="dropdown-menu  dr-menu w-100 mt-lg-3 mt-2 border-0"
+                            aria-labelledby="navbarScrollingDropdown">
+                            <div class="dr-m">
+                                <div class="row">
+                                    <div class="col-6">
+                                        <ul class="list-unstyled">
+                                            <li class="pb-2">
+                                                <a href="#"
+                                                    class="ave-d mb-4 nav-color fw-normal f-f-montserrat"></a>casuals
+                                            </li>
+                                            <li>
+                                                <a href="#"
+                                                    class="text-decoration-none nav-dr-color fw-light f-f-montserrat">Jackets</a>
+                                            </li>
+                                            <li>
+                                                <a href="#"
+                                                    class="text-decoration-none nav-dr-color fw-light f-f-montserrat">Hoodies
+                                                    &
+                                                    Sweatshirts</a>
+                                            </li>
+                                            <li>
+                                                <a href="#"
+                                                    class="text-decoration-none nav-dr-color fw-light f-f-montserrat">Polo
+                                                    Shirts</a>
+                                            </li>
+                                            <li>
+                                                <a href="#"
+                                                    class="text-decoration-none nav-dr-color fw-light f-f-montserrat">Sportswear</a>
+                                            </li>
+                                            <li>
+                                                <a href="#"
+                                                    class="text-decoration-none nav-dr-color fw-light f-f-montserrat">Trousers
+                                                    &
+                                                    Chinos</a>
+                                            </li>
+                                            <li class="mb-3"><a href=""
+                                                    class="text-decoration-none nav-dr-color f-f-montserrat">T-Shirts</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+
+                                    <div class="col-6">
+                                        <ul class="list-unstyled">
+                                            <li class="pb-2"><a href="#" class="ave-d f-f-montserrat"></a>Formal</li>
+                                            <li><a href=""
+                                                    class="text-decoration-none nav-dr-color f-f-montserrat">Jackets</a>
+                                            </li>
+                                            <li><a href="" class="text-decoration-none nav-dr-color f-f-montserrat">
+                                                    Shirts</a></li>
+                                            <li><a href=""
+                                                    class="text-decoration-none nav-dr-color f-f-montserrat">Suits</a>
+                                            </li>
+                                            <li><a href=""
+                                                    class="text-decoration-none nav-dr-color f-f-montserrat">Trousers
+                                                </a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+
+                                <div class="sale  sale-1 w-100 h-100 text-center text-uppercase mt-lg-5 mt-3">
+                                    <h3 class="color-fff fw-bold mb-0">Autumn sale! </h3>
+                                    <span class="up color-fff fw-normal">up to 50% off</span>
+                                </div>
+
+                            </div>
+                        </ul>
+                    </li>
+
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle  dr-to-nav  dr-to1 bg-no-repeat text-uppercase nav-color f-f-montserrat"
+                            href="#" id="navbarScrollingDropdown1" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            women
+                        </a>
+                        <ul class="dropdown-menu dr-menu w-100 mt-lg-3 mt-2 border-0" aria-labelledby="
+                            navbarScrollingDropdown1">
+                            <div class="dr-m">
+                                <div class="row">
+                                    <div class="col-6">
+                                        <ul class="list-unstyled">
+                                            <li class="pb-2">
+                                                <a href="#"
+                                                    class="ave-d mb-4 nav-color fw-normal f-f-montserrat"></a>casuals
+                                            </li>
+                                            <li>
+                                                <a href="#"
+                                                    class="text-decoration-none nav-dr-color fw-light f-f-montserrat">Jackets</a>
+                                            </li>
+                                            <li>
+                                                <a href="#"
+                                                    class="text-decoration-none nav-dr-color fw-light f-f-montserrat">Hoodies
+                                                    &
+                                                    Sweatshirts</a>
+                                            </li>
+                                            <li>
+                                                <a href="#"
+                                                    class="text-decoration-none nav-dr-color fw-light f-f-montserrat">Polo
+                                                    Shirts</a>
+                                            </li>
+                                            <li>
+                                                <a href="#"
+                                                    class="text-decoration-none nav-dr-color fw-light f-f-montserrat">Sportswear</a>
+                                            </li>
+                                            <li>
+                                                <a href="#"
+                                                    class="text-decoration-none nav-dr-color fw-light f-f-montserrat">Trousers
+                                                    &
+                                                    Chinos</a>
+                                            </li>
+                                            <li class="mb-3"><a href=""
+                                                    class="text-decoration-none nav-dr-color f-f-montserrat">T-Shirts</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+
+                                    <div class="col-6">
+                                        <ul class="list-unstyled">
+                                            <li class="pb-2"><a href="#" class="ave-d f-f-montserrat"></a>Formal</li>
+                                            <li><a href=""
+                                                    class="text-decoration-none nav-dr-color f-f-montserrat">Jackets</a>
+                                            </li>
+                                            <li><a href="" class="text-decoration-none nav-dr-color f-f-montserrat">
+                                                    Shirts</a></li>
+                                            <li><a href=""
+                                                    class="text-decoration-none nav-dr-color f-f-montserrat">Suits</a>
+                                            </li>
+                                            <li><a href=""
+                                                    class="text-decoration-none nav-dr-color f-f-montserrat">Trousers
+                                                </a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+
+                                <div class="sale  sale-1 w-100 h-100 text-center text-uppercase mt-lg-5 mt-3">
+                                    <h3 class="color-fff fw-bold mb-0">Autumn sale! </h3>
+                                    <span class="up color-fff fw-normal">up to 50% off</span>
+                                </div>
+
+                            </div>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link  f-f-montserrat active" href="#">THE BRAND</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link nav-color f-f-montserrat" href="#">LOCAL STORES</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link nav-color f-f-montserrat" href="#">LOOK BOOK</a>
+                    </li>
+                </ul>
+                <form class="d-flex position-relative ms-lg-5">
+                    <input class="form-control me-2 box-shadow-none rounded-0" type="search" placeholder="Search"
+                        aria-label="Search">
+                    <button class="btn search position-absolute end-0 pe-3" type="submit"><i
+                            class="far fa-search"></i></button>
+                </form>
+            </div>
+        </div>
+    </nav>
+    <!-- end:: navbar -->
+
+    <!-- start:: the_brand_benner -->
+    <section class="mt-3">
+        <div class="main-section bg-img-main-img w-100 h-100 bg-size-cover">
+            <div class="container">
+                <div class="main-name text-center f-f-montserrat text-uppercase"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- end:: the_brand_benner -->
+
+
+    <!-- start:: the_brand_section -->
+    <section>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6">
+                    <img src="images/" alt="">
+                </div>
+                <div class="col-lg-6"></div>
+            </div>
+        </div>
+    </section>
+    <!-- end:: the_brand_section -->
+
+
+
+
+
+
+
+
+
+    <!-- start:: footer -->
+    <footer class="footer-bg pt-100">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-2 col-md-4 col-sm-6 col-6 pb-24">
+                    <div class="footer-section">
+                        <div></div>
+                        <div></div>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-4 col-sm-6 col-6 pb-24">
+                    <div class="footer-section">
+                        <div></div>
+                        <div></div>
+                    </div>
+                </div>
+
+                <div class="col-lg-2 col-md-4 col-sm-6 col-6 pb-24">
+                    <div class="footer-section">
+                        <div></div>
+                        <div></div>
+                    </div>
+                </div>
+
+                <div class="col-lg-2 col-md-4 col-sm-6 col-6 pb-24">
+                    <div class="footer-section">
+                        <div></div>
+                        <div></div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-7 col-sm-7 pb-24">
+                    <div class="footer-section">
+                        <div></div>
+                        <div>
+                            <div class="mb-2"></div>
+                            <div class="mb-2"></div>
+                            <div class="mb-2"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-lg-6 mb-lg-0 mb-3">
+                    <div class="footer-bottom-1 text-uppercase text-center f-f-montserrat"></div>
+                </div>
+                <div class="col-lg-6">
+                    <div
+                        class="footer-bottom-2 text-uppercase text-center f-f-montserrat d-flex justify-content-center">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <div class="footer-bottom">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="copyright f-f-montserrat text-center"></div>
+                </div>
+
+
+            </div>
+        </div>
+    </div>
+    <!-- end:: footer -->
+
+
+
+    <script src="./node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/custom.js"></script>
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script>
+
+    </script>
+
+    <!--start:: topbar -->
+    <script>
+        document.getElementById("signin").onmouseover = function () { mouseOur() };
+        document.getElementById("signin").onmouseout = function () { mouseOut() };
+
+        function mouseOur() {
+            document.getElementById("signin").style.color = "#00c8c8";
+        }
+
+        function mouseOut() {
+            document.getElementById("signin").style.color = "#999999";
+        }
+    </script>
+
+    <script>
+        $("#empty").hover(function () {
+            $(this).css("background", "#00c8c8").css("color", "#ffffff");
+        }, function () {
+            $(this).css("background", "transparent").css("color", "#999999");
+
+        })
+    </script>
+
+    <script>
+        document.getElementById("currency").innerHTML = "Currency :";
+        document.getElementById("signin").innerHTML = " Register / SignIn";
+    </script>
+
+    <!-- End:: topbar -->
+
+    <!--start:: navbar -->
+
+    <script>
+        $(".nav-color").hover(function () {
+            $(this).css("color", "#00c8c8");
+        }, function () {
+            $(this).css("color", "#222222");
+        })
+    </script>
+
+    <script>
+        $(".search").hover(function () {
+            $(this).css("color", "#00c8c8");
+        }, function () {
+            $(this).css("color", "#999999");
+
+        })
+    </script>
+
+    <script>
+        $(".nav-dr-color").hover(function () {
+            $(this).css("color", "#00c8c8");
+        }, function () {
+            $(this).css("color", "#727272");
+        })
+    </script>
+
+    <!-- End:: navbar -->
+
+    <!-- start::  the_brand_benner -->
+    <script>
+        $(".main-name").wrapInner("<h4><strong>the</strong> brand</h4>  <h6>company slogan goes here</h6>");
+        $(".main-name > h4").addClass("color-fff").addClass("fw-light");
+        $(".main-name > h4 > strong").addClass("fw-bold");
+        $(".main-name > h6").addClass("color-fff").addClass("fw-normal");
+    </script>
+
+    <!-- End:: the_brand_benner -->
+
+    <!-- start:: the_brand_section -->
+
+    <!-- End:: the_brand_section -->
+
+
+    <!-- start:: footer -->
+    <script>
+        $(".footer-section > div:nth-child(1)").addClass("footer-head");
+        $(".footer-section > div:nth-child(2)").addClass("footer-body").addClass("f-f-montserrat");
+        $(".footer-head").wrapInner("<h3></h3>");
+
+        $(".footer-head > h3").eq(0).html("INFORMATION");
+        $(".footer-body").eq(0).wrapInner("<ul><li><a href=''>The brand</a></li><li><a href=''>Local stores</a></li><li><a href=''>Customer service</a></li> <li><a href=''>Privacy & cookies</a></li>  <li><a href=''>Site map</a></li></ul>");
+        $(".footer-head > h3").eq(1).html("Why buy from us");
+        $(".footer-body").eq(1).wrapInner("<ul><li><a href=''>Shipping & returns</a></li><li><a href=''>Secure shopping</a></li><li><a href=''>Testimonials</a></li> <li><a href=''>Award winning</a></li>  <li><a href=''>Ethical trading</a></li></ul>");
+        $(".footer-head > h3").eq(2).html("YOUR ACCOUNT");
+        $(".footer-body").eq(2).wrapInner("<ul><li><a href=''>Sign in</a></li><li><a href=''>Register</a></li><li><a href=''>View cart</a></li> <li><a href=''>View your lookbook</a></li>  <li><a href=''>Track an order</a></li> <li><a href=''>Update information</a></li></ul>");
+        $(".footer-head > h3").eq(3).html("LOOKBOOK");
+        $(".footer-body").eq(3).wrapInner("<ul><li><a href=''>Latest posts</a></li><li><a href=''>Men’s lookbook</a></li><li><a href=''>Women’s lookbook</a></li> <li><a href=''>Lookbooks RSS feed</a></li>  <li><a href=''>View your lookbook</a></li> <li><a href=''>Delete your lookbook</a></li></ul>");
+        $(".footer-head > h3").eq(4).html("CONTACT DETAILS");
+
+        $(".footer-section > .footer-body > div:nth-child(1)").addClass("address");
+        $(".footer-section > .footer-body > div:nth-child(2)").addClass("telephone");
+        $(".footer-section > .footer-body > div:nth-child(3)").addClass("email");
+        $(".footer-body > .address").wrapInner("<a href='http://maps.google.com/?q=1200 Head Office: Avenue Fashion,  180-182 Regent Street, London.' target='_blank'>Head Office: Avenue Fashion,  180-182 Regent Street, London.</a>");
+        $(".footer-body > .telephone").wrapInner("<label>Telephone: </label> <a href='tel:+0123-456-789'>0123-456-789 </a>");
+        $(".footer-body > .email").wrapInner("<label>Email: </label> </label> <a href='mailto:support@yourwebsite.com'>support@yourwebsite.com</a>");
+        $(".footer-head > h3").addClass("text-uppercase").addClass("fw-normal");
+        $(".footer-body > ul").addClass("list-unstyled");
+
+
+        $(".footer-body a").addClass("text-decoration-none").addClass("f-f-montserrat").addClass("fw-light");
+        // $(".footer-body a").addClass("text-decoration-none");
+
+        $(".footer-bottom-1").wrapInner("<strong>award winner </strong> <h4> fashion awards 2016</h4>");
+        $(".footer-bottom-1 > h4").addClass("fw-light");
+
+        $(".footer-bottom-2").wrapInner("<ul><li><a href=''><i class='fab fa-facebook-f'></i></a></li><li><a href=''><i class='fab fa-twitter'></i></a></li> <li><a href=''><i class='fab fa-instagram'></i></a></li> <li><a href=''><i class='fab fa-pinterest-p'></i></a></li> </ul>");
+        $(".footer-bottom-2 > ul").addClass("list-unstyled").addClass("d-flex justify-content-center");
+        $(".copyright").wrapInner("<h6> © 2016 Avenue Fashion™ </h6>");
+        $(".copyright > h6").addClass("mb-0").addClass("fw-normal");
+    </script>
+
+    <script>
+        $(".footer-body a").hover(function () {
+            $(this).css("color", "#00c8c8");
+        }, function () {
+            $(this).css("color", "#727272");
+        })
+    </script>
+
+    <script>
+        $(".footer-bottom-2 a i").hover(function () {
+            $(this).css("transform", "rotate(20deg)").css("transition", ".2s");
+        }, function () {
+            $(this).css("transform", "rotate(0deg)");
+        })
+    </script>
+    <!-- end:: footer -->
+
+
+
+
+
+</body>
+
+</html>

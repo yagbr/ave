@@ -606,6 +606,9 @@ $color-575153: #575153;
     a{
         font-size: 14px;
         color:  $color-727272;
+        @media (max-width:320px) {
+            font-size: 12px;
+        }
     }
 
     address {
@@ -623,12 +626,22 @@ $color-575153: #575153;
     background-color: $backround-color;
     padding: 50px;
     color: #fff;
+
+    @media (max-width:428px) {
+        padding: 25px;
+    }
      strong {
         font-size: 24px;
+        @media (max-width:428px) {
+           font-size: 18px;
+        }
      }
 
      h4 {
          font-size: 24px;
+         @media (max-width:428px) {
+            font-size: 18px;
+         }
      }
 }
 
@@ -637,12 +650,19 @@ $color-575153: #575153;
     padding: 50px; 
     height: 100%;
 
+    @media (max-width:428px) {
+        padding: 25px;
+    }
+
     a{
         color: $color-fff;
     }
 
     li{
         padding: 16px;
+        @media (max-width:428px) {
+            padding: 10px;
+        }
     }
 }
 
@@ -661,4 +681,37 @@ $color-575153: #575153;
 
 // ----- end:: footer --- //
 
+// ------------------- The brand --------------------- //
+
+//----- start::  the_brand_benner --- //
+.main-section{
+    padding: calc((200 / 2880) * 100%) 0;
+}
+
+.main-name {
+    h4 {
+        font-size: 48px;
+        @media (max-width: 1440px) and (min-width: 429px) {
+           font-size: 36px; 
+        }
+
+        @media (max-width: 428px) {
+            font-size: 18px; 
+        }
+    }
+
+    h6 {
+        font-size: 30px;
+
+        @media (max-width: 1440px) and (min-width: 429px) {
+            font-size: 24px; 
+         }
+
+         @media (max-width: 428px) {
+            font-size: 16px; 
+        }
+    }
+}
+
+// ----- end:: the_brand_benner --- //
 

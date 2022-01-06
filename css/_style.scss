@@ -635,6 +635,18 @@ $color-575153: #575153;
     }
 }
 
+.footer-bottom{
+    background-color: $backround-color;
+    padding: calc(45px/2) 0;
+}
+
+.copyright {
+    h6{
+        color:  $color-999;
+        font-size: 13px;
+    }
+}
+
 
 // ----- end:: footer --- //
 

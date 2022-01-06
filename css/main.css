@@ -11874,4 +11874,14 @@ textarea.form-control-lg {
 }
 .footer-bottom-2 li {
   padding: 16px;
+}
+
+.footer-bottom {
+  background-color: #333;
+  padding: calc(45px/2) 0;
+}
+
+.copyright h6, .copyright .h6 {
+  color: #999999;
+  font-size: 13px;
 }/*# sourceMappingURL=main.css.map */

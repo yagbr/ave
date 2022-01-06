@@ -9,6 +9,7 @@ $color-737373: #737373;
 $color-8e8c8c : #8e8c8c;
 $color-f8f8f8: #f8f8f8;
 $color-575153: #575153;
+$color-eee: #eeeeee;
 .mt-62{
     margin-top: 62px;
 }
@@ -17,6 +18,9 @@ $color-575153: #575153;
     margin-top: 54px;
 }
 
+.border-design{
+    border: 1px solid $color-eee;
+}
 // ------------------- Home --------------------- //
 
 // ----- start::header-top ----- //
@@ -397,7 +401,7 @@ $color-575153: #575153;
     }
 }
 
-.popular-pro {
+.popular-pro  h6{
     color: $color-727272;
     font-size: 13px;
 }
@@ -492,7 +496,7 @@ $color-575153: #575153;
 }
 
 .lookbook-title {
-    & > h4{
+    h4{
         font-size: 48px;
         font-weight: bold;
         text-transform: uppercase;
@@ -714,4 +718,13 @@ $color-575153: #575153;
 }
 
 // ----- end:: the_brand_benner --- //
+
+//----- start::  the_brand_benner --- //
+
+.pb-50{
+    padding-bottom: 50px;
+}
+// ----- end:: the_brand_benner --- //
+
+
 

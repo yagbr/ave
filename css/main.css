@@ -11255,6 +11255,10 @@ textarea.form-control-lg {
   margin-top: 54px;
 }
 
+.border-design {
+  border: 1px solid #eeeeee;
+}
+
 .currency {
   padding: calc(2.813rem/2) 0;
   color: #999999;
@@ -11605,7 +11609,7 @@ textarea.form-control-lg {
   }
 }
 
-.popular-pro {
+.popular-pro h6, .popular-pro .h6 {
   color: #727272;
   font-size: 13px;
 }
@@ -11689,24 +11693,24 @@ textarea.form-control-lg {
   height: 103%;
 }
 
-.lookbook-title > h4, .lookbook-title > .h4 {
+.lookbook-title h4, .lookbook-title .h4 {
   font-size: 48px;
   font-weight: bold;
   text-transform: uppercase;
   color: #575153;
 }
 @media (max-width: 1920px) and (min-width: 1441px) {
-  .lookbook-title > h4, .lookbook-title > .h4 {
+  .lookbook-title h4, .lookbook-title .h4 {
     font-size: 36px;
   }
 }
 @media (max-width: 1440px) and (min-width: 376px) {
-  .lookbook-title > h4, .lookbook-title > .h4 {
+  .lookbook-title h4, .lookbook-title .h4 {
     font-size: 24px;
   }
 }
 @media (max-width: 375px) {
-  .lookbook-title > h4, .lookbook-title > .h4 {
+  .lookbook-title h4, .lookbook-title .h4 {
     font-size: 18px;
   }
 }
@@ -11908,4 +11912,8 @@ textarea.form-control-lg {
   .main-name h6, .main-name .h6 {
     font-size: 16px;
   }
+}
+
+.pb-50 {
+  padding-bottom: 50px;
 }/*# sourceMappingURL=main.css.map */

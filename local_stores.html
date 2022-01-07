@@ -348,7 +348,7 @@
     </nav>
     <!-- end:: navbar -->
 
-    <!-- start:: the_brand_benner -->
+    <!-- start:: local_stores_benner -->
     <div class="mt-3">
         <div class="main-section bg-img-main-img w-100 h-100 bg-size-cover">
             <div class="container">
@@ -357,38 +357,31 @@
         </div>
     </div>
 
-    <!-- end:: the_brand_benner -->
+    <!-- end:: local_stores_benner -->
 
-
-    <!-- start:: the_brand_section -->
-    <div class="mt-5">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-6">
-                    <div class="brand1"></div>
-                    <div class="brand-conatct mt-4"></div>
-                </div>
-                <div class="col-lg-6">
-                    <div class="brand-conatct mt-4 pb-50"></div>
-                    <div class="brand2"></div>
-                    <div class="brand-conatct mt-4 pb-50"></div>
-                    <div class="row">
-                        <div class="col-4">
-                            <div class="brand-img"></div>
-                        </div>
-                        <div class="col-4">
-                            <div class="brand-img d-flex justify-content-center"></div>
-                        </div>
-                        <div class="col-4">
-                            <div class="brand-img d-flex justify-content-end"></div>
-                        </div>
+    <!-- start:: local_stores_section -->
+    <div class="container mt-5">
+        <div class="row justify-content-center">
+            <div class="col-lg-10">
+                <div class="row">
+                    <div class="col-md-4  mb-md-0 mb-5">
+                        <div class="city_details"></div>
                     </div>
-
+                    <div class="col-md-4 mb-md-0 mb-5">
+                        <div class="city_details"></div>
+                    </div>
+                    <div class="col-md-4 mb-md-0  mb-5">
+                        <div class="city_details"></div>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
-    <!-- end:: the_brand_section -->
+    <!-- end:: local_stores_section -->
+
+
+
+
 
     <!-- start:: footer -->
     <footer class="footer-bg pt-100">
@@ -472,32 +465,35 @@
     <script src="js/navbar.js"></script>
     <script src="js/footer.js"></script>
 
-    <!-- start::  the_brand_benner -->
+    <!-- start::  local_stores_benner -->
     <script>
-        $(".main-name").wrapInner("<h4><strong>the</strong> brand</h4>  <h6>company slogan goes here</h6>");
+        $(".main-name").wrapInner("<h4><strong>Local</strong> stores</h4>  <h6>Find a store near youe</h6>");
         $(".main-name > h4").addClass("color-fff").addClass("fw-light");
         $(".main-name > h4 > strong").addClass("fw-bold");
         $(".main-name > h6").addClass("color-fff").addClass("fw-normal");
     </script>
 
-    <!-- End:: the_brand_benner -->
+    <!-- End:: local_stores_benner -->
 
-    <!-- start:: the_brand_section -->
+    <!--  start:: local_stores_section -->
     <script>
-        $(".brand1").wrapInner("<img src='images/brand1.png' class='img-fluid pb-50' alt= ''>  <img src='images/brand2.png' class='img-fluid' alt= ''>");
-        $(".brand-conatct").eq(0).wrapInner("<h5>our values, vision and strategy</h5> <h6>The above image would be a great place for an advertising video</h6> <p>Cras maximus venenatis malesuada. Nulla sagittis elit felis, ac facilisis quam ornare aliquam. Etiam cursus odio vitae dui dignissim, sed tempus lacus tincidunt et donec sapien velit, rhoncus eu nulla a, molestie tempus mi maecenas sagittis ornare.Pellentesque sapien mi, <span>tincidunt nec magna vitae,</span> volutpat elementum odioni lorem Aliquam tempor massa vitae augue mattis tempor id in ante ut augue erat, luctus eil.</p > ");
-        $(".brand-conatct").eq(1).wrapInner("<h5>hand designed clothing</h5> <h6>ESTABLISHED IN 2013, AVENUE FASHION SED DICTUM ELIT VEL SAPIEN LUCTUS ERAS</h6> <p>Praesent feugiat malesuada tristique maecenas rhoncus diam eget quam vestibulim consectetur, id condimentum leo porttitor. Cum sociis natoque penatibus eta magnis disut parturient montes, nascetur ridiculus mus. Donec sem lorem laoreet tempor un risus vitae, rutrum sodales nibh suspendisse congue metus nunc, id viverra elit loreti rhoncus quis consecteur es. Donec pulvinar tempor lorem a pretium justo interdum.</p>");
-        $(".brand-conatct").eq(2).wrapInner("<h5>Ethical trading</h5> <h6>we oversee the working conditions of the people in the supply chain</h6> <p>Nullam dapibus consectetur neque, faucibus porttitor purus iaculis sed. Aenean eras dapibus augue, eget dignissim dui maecenas et rhoncus mim, vel semper arcu lorem Pellentesque congue justo esteir pellentesque aliquet massa eget posuere tincidunt.Cras viverra ullamcorper nunc accumsan hendrerit. </p>");
-        $(".brand-conatct > h5").addClass("f-f-montserrat text-uppercase");
-        $(".brand-conatct > h6").addClass("f-f-montserrat text-uppercase");
-        $(".brand-conatct > p").addClass("f-f-roboto").addClass("mb-0");
-        $(".brand2").wrapInner("<img src= 'images/brand3.png' class='img-fluid ' alt= ''>");
-        $(".brand-img").eq(0).wrapInner("<img src= 'images/brand-img.png' class='img-fluid ' alt= ''>");
-        $(".brand-img").eq(1).wrapInner("<img src= 'images/brand-img-1.png' class='img-fluid ' alt= ''>");
-        $(".brand-img").eq(2).wrapInner("<img src= 'images/brand-img-2.png' class='img-fluid ' alt= ''>");
-    </script>
+        $(".city_details").eq(0).wrapInner("<h4>London</h4> <h6>180-182 Regent Street, London, W1B 5BT</h6> <p>Lorem ipsum dolor sit amet, consectetur adipiscing esi elit. Vivamus at arcu sem. Vestibulum ornare eleifendit massa, nec tempor odio. Fusce posuere nunc iaculis ligula viverra iaculis. Aliquam erat volutpat.</p> <button type='button' class='btn view_details f-f-montserrat rounded-0 text-uppercase'>view Details</button>");
+        $(".city_details").eq(1).wrapInner("<h4>New York</h4> <h6>09 Columbus Circle, New York, NY 10023</h6> <p>Nunc non posuere nisl. Etiam finibus vel dui nec lobortis. Aliquam egestas, sem quis condimentum venenatis, erat leo fermentum dolor, non sollicitudin massa mi eu nibh. Nullam vitae aliquam dui, non sodales nisl.</p> <button type='button' class='btn view_details f-f-montserrat rounded-0 text-uppercase'>view Details</button>");
+        $(".city_details").eq(2).wrapInner("<h4>Paris</h4> <h6>133 Rue Saint-Honoré, 75001 Paris</h6> <p>Ut interdum fermentum blandit. Donec nec lacus egetit mi rhoncus eleifend. Curabitur laoreet nisl eget rutruml auctor. Vestibulum ante ipsum primis in faucibus orcip luctus et ultrices posuere cubilia curae cras ligula.</p> <button type='button' class='btn view_details f-f-montserrat rounded-0 text-uppercase'>view Details</button>");
+        $(".city_details > h4 , .city_details > h6").addClass("f-f-montserrat  text-uppercase");
+        $(".city_details > p").addClass("f-f-roboto");
 
-    <!-- End:: the_brand_section -->
+        $(".view_details").hover(function () {
+            $(this).css("border-color", "#00c8c8").css("background-color", "#00c8c8").css("color", "#ffffff");
+        }, function () {
+            $(this).css("border-color", "#737373").css("background-color", "transparent").css("color", "#454647");
+
+        })
+
+    </script>
+    <!-- End:: local_stores_section -->
+
+
 
 </body>
 

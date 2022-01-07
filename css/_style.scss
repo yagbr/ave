@@ -21,6 +21,11 @@ $color-eee: #eeeeee;
 .border-design{
     border: 1px solid $color-eee;
 }
+
+::selection{
+    background-color: $primary-color;
+    text-align: $color-fff;
+}
 // ------------------- Home --------------------- //
 
 // ----- start::header-top ----- //
@@ -602,6 +607,10 @@ $color-eee: #eeeeee;
     h3{
         font-size: 13px;
         color:  $color-575153;
+
+        @media (max-width: 1024px) {
+            font-size: 10px;
+        }
         
     }
 }
@@ -610,19 +619,25 @@ $color-eee: #eeeeee;
     a{
         font-size: 14px;
         color:  $color-727272;
-        @media (max-width:320px) {
-            font-size: 12px;
+        @media (max-width:1024px) {
+            font-size: 11px;
         }
     }
 
     address {
         font-size: 14px;
         color:  $color-727272;
+        @media (max-width:1024px) {
+            font-size: 11px;
+        }
     }
 
     label {
         font-size: 14px;
         color:  $color-727272;
+        @media (max-width:1024px) {
+            font-size: 11px;
+        }
     }
 }
 
@@ -643,7 +658,9 @@ $color-eee: #eeeeee;
 
      h4 {
          font-size: 24px;
-         @media (max-width:428px) {
+
+
+         @media (max-width:1024px) {
             font-size: 18px;
          }
      }
@@ -664,7 +681,7 @@ $color-eee: #eeeeee;
 
     li{
         padding: 16px;
-        @media (max-width:428px) {
+        @media (max-width:1024px) {
             padding: 10px;
         }
     }
@@ -779,5 +796,64 @@ $color-eee: #eeeeee;
 }
 // ----- end:: the_brand_section --- //
 
+
+// ------------------- local stores --------------------- //
+// ----- start::local_stores_section --- //
+
+
+.city_details {
+    h4{
+        font-size: 18px;
+        color: $color-575153;
+        @media (max-width:1024px){
+            font-size: 16px;
+        }
+    }
+
+    h6 {
+        font-size: 13px;
+        color: $color-727272;
+
+        @media (max-width:1366px) and (min-width: 1025px){
+            font-size: 12px;
+        }
+
+        @media (max-width:1024px) and (min-width:992px) {
+            font-size: 10px;
+        }
+
+        @media (max-width:991px) {
+            font-size: 9px;
+        }
+    }
+
+    p{
+        font-size: 15px;
+        color: $color-8e8c8c;
+
+        @media (max-width:1440px)  and (min-width:1367px){
+            font-size: 13px;
+        }
+
+        @media (max-width: 1366px) and (min-width:1025px) {
+            font-size: 11px;
+        }
+
+        @media (max-width:1024px){
+            font-size: 11px;
+        }
+    }
+}
+
+
+.view_details{
+    border: 2px solid $color-737373;
+    font-size: 16px;
+
+    @media (max-width: 1440px) {
+        font-size: 14px;
+    }
+}
+// ----- end:: local_stores_section --- //
 
 

@@ -11261,12 +11261,12 @@ textarea.form-control-lg {
 
 ::-moz-selection {
   background-color: #00c8c8;
-  text-align: #fff;
+  color: #fff;
 }
 
 ::selection {
   background-color: #00c8c8;
-  text-align: #fff;
+  color: #fff;
 }
 
 .currency {
@@ -12060,4 +12060,77 @@ textarea.form-control-lg {
   .view_details {
     font-size: 14px;
   }
-}/*# sourceMappingURL=main.css.map */
+}
+
+.map-section {
+  background-color: #f8f8f8;
+  padding: 41px 47px 91px 41px;
+}
+@media (max-width: 991px) and (min-width: 429px) {
+  .map-section {
+    padding: 41px 47px 61px 41px;
+  }
+}
+@media (max-width: 428px) {
+  .map-section {
+    padding: 41px 41px 61px 36px;
+  }
+}
+
+.map iframe {
+  height: 100%;
+}
+
+.map-list i {
+  color: #575153;
+}
+.map-list a {
+  color: #8e8c8c;
+  font-size: 14px;
+}
+@media (max-width: 428px) {
+  .map-list a {
+    font-size: 12px;
+  }
+}
+
+.dept a {
+  margin-left: 10px;
+}
+.dept i {
+  font-size: 16px;
+}
+@media (max-width: 428px) {
+  .dept i {
+    font-size: 14px;
+  }
+}
+
+.dept > * {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.icon-list li {
+  width: 30px;
+  height: 30px;
+  background-color: #727272;
+  border-radius: 50%;
+}
+.icon-list li i {
+  color: #fff;
+  font-size: 18px;
+}
+@media (max-width: 991px) {
+  .icon-list li i {
+    font-size: 16px;
+  }
+}
+
+/* Always set the map height explicitly to define the size of the div
+       * element that contains the map. */
+#map {
+  height: 100%;
+}
+
+/* Optional: Makes the sample page fill the window. *//*# sourceMappingURL=main.css.map */

@@ -5,6 +5,8 @@
     <meta charset="UTF-8">
     <!-- <meta http-equiv="X-UA-Compatible" content="IE=edge"> -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Disabling the Default UI</title>
+    <!-- <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script> -->
     <title>Document</title>
     <link rel="stylesheet" href="css/link.css">
 
@@ -370,7 +372,7 @@
                     <div class="col-md-4 mb-md-0 mb-5">
                         <div class="city_details"></div>
                     </div>
-                    <div class="col-md-4 mb-md-0  mb-5">
+                    <div class="col-md-4 mb-md-0 ">
                         <div class="city_details"></div>
                     </div>
                 </div>
@@ -379,9 +381,39 @@
     </div>
     <!-- end:: local_stores_section -->
 
+    <!-- start:: local_stores_map -->
+    <div class="container-fluid mt-5">
+        <div class="row">
+            <div class="col-lg-8 col-md-6 ps-0 pe-0">
+                <div class="map" id="map"></div>
+            </div>
+            <div class="col-lg-4 col-md-6 map-section">
+                <div class="city_details"></div>
+                <div>
 
 
 
+                    <ul>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                    </ul>
+
+                    <ul>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                    </ul>
+
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- end:: local_stores_map -->
 
     <!-- start:: footer -->
     <footer class="footer-bg pt-100">
@@ -460,10 +492,15 @@
 
 
     <script src="./node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- <script src="https://maps.googleapis.com/maps/api/js"></script> -->
+
     <script src="js/jquery-3.6.0.min.js"></script>
     <script src="js/topbar.js"></script>
     <script src="js/navbar.js"></script>
     <script src="js/footer.js"></script>
+
+    <!-- <script src="js/map.js"></script> -->
+    </script>
 
     <!-- start::  local_stores_benner -->
     <script>
@@ -480,6 +517,7 @@
         $(".city_details").eq(0).wrapInner("<h4>London</h4> <h6>180-182 Regent Street, London, W1B 5BT</h6> <p>Lorem ipsum dolor sit amet, consectetur adipiscing esi elit. Vivamus at arcu sem. Vestibulum ornare eleifendit massa, nec tempor odio. Fusce posuere nunc iaculis ligula viverra iaculis. Aliquam erat volutpat.</p> <button type='button' class='btn view_details f-f-montserrat rounded-0 text-uppercase'>view Details</button>");
         $(".city_details").eq(1).wrapInner("<h4>New York</h4> <h6>09 Columbus Circle, New York, NY 10023</h6> <p>Nunc non posuere nisl. Etiam finibus vel dui nec lobortis. Aliquam egestas, sem quis condimentum venenatis, erat leo fermentum dolor, non sollicitudin massa mi eu nibh. Nullam vitae aliquam dui, non sodales nisl.</p> <button type='button' class='btn view_details f-f-montserrat rounded-0 text-uppercase'>view Details</button>");
         $(".city_details").eq(2).wrapInner("<h4>Paris</h4> <h6>133 Rue Saint-Honoré, 75001 Paris</h6> <p>Ut interdum fermentum blandit. Donec nec lacus egetit mi rhoncus eleifend. Curabitur laoreet nisl eget rutruml auctor. Vestibulum ante ipsum primis in faucibus orcip luctus et ultrices posuere cubilia curae cras ligula.</p> <button type='button' class='btn view_details f-f-montserrat rounded-0 text-uppercase'>view Details</button>");
+        $(".city_details").eq(3).wrapInner("<h4>London</h4> <h6>180-182 Regent Street, London, W1B 5BT</h6> <p>Lorem ipsum dolor sit amet, consectetur adipiscing esi elit. Vivamus at arcu sem. Vestibulum ornare eleifendit massa, nec tempor odio. Fusce posuere nunc iaculis ligula viverra iaculis. Aliquam erat volutpat.</p>");
         $(".city_details > h4 , .city_details > h6").addClass("f-f-montserrat  text-uppercase");
         $(".city_details > p").addClass("f-f-roboto");
 
@@ -488,9 +526,46 @@
         }, function () {
             $(this).css("border-color", "#737373").css("background-color", "transparent").css("color", "#454647");
 
+        });
+
+        $(".map").wrapInner("<iframe src='https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2483.040684901662!2d-0.14200518422985065!3d51.51246957963597!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x487604d5742d021f%3A0x6c7d54766b4df30b!2sAvenue%20Fashion!5e0!3m2!1sen!2sin!4v1641541746427!5m2!1sen!2sin'   style='border:0;' allowfullscreen='' loading='lazy' zoom='0'></iframe>");
+        $(".map > iframe").addClass("w-100");
+
+        $(".map-section > div:nth-child(2)").addClass("map-list");
+
+        $(".map-list > ul").eq(0).addClass("map-d list-unstyled");
+        $(".map-list > .map-d > li").addClass("dept");
+        $(".map-list > ul > li:nth-child(1)").eq(0).wrapInner("<i class='fas fa-map-marker-alt'></i> <a href='http://maps.google.com/?q=1200 180-182 Regent Street, London, W1B 5BT' target='_blank'>180-182 Regent Street, London, W1B 5BT</a>");
+        $(".map-list > ul > li:nth-child(2)").eq(0).wrapInner("<i class='fas fa-phone-alt'></i><a href='tel:+0123-456-789'>0123-456-789</a>");
+        $(".map-list > ul > li:nth-child(3)").eq(0).wrapInner("<i class='fas fa-link fa-rotate-270'></i><a href='https://www.yourwebsite.com/' target='_blank'>www.yourwebsite.com</a>");
+        $(".map-list > ul > li:nth-child(4)").eq(0).wrapInner("<i class='far fa-envelope'></i><a href='mailto:someone@example.com'>support@yourwebsite.com</a>");
+        $(".map-list > ul > li:nth-child(5)").eq(0).wrapInner("<i class='far fa-clock'></i> <a href=''>Monday-Friday: 9am to 6pm  Saturday: 10am to 6pm  Sunday: 10am to 2pm");
+        $(".map-list > ul > li > a").addClass("text-decoration-none");
+        $(".map-list > ul > li").eq(0).addClass("mb-2");
+        $(".map-list > ul > li:nth-child(5)").eq(0).addClass("d-flex mt-2");
+        $(".map-list > ul > li:nth-child(5) > i ").addClass("mt-1");
+
+        $(".map-list > ul").eq(1).addClass("list-unstyled d-flex icon-list");
+        $(".map-list > .icon-list > li").addClass("me-2 d-flex justify-content-center align-items-center cursor-pointer");
+        $(".map-list > .icon-list > li:nth-child(1)").wrapInner("<i class='fab fa-facebook-f'></i>");
+        $(".map-list > .icon-list > li:nth-child(2)").wrapInner("<i class='fab fa-twitter'></i>");
+        $(".map-list > .icon-list > li:nth-child(3)").wrapInner("<i class='fab fa-instagram'></i>");
+        $(".map-list > .icon-list > li:nth-child(4)").wrapInner("<i class='fab fa-pinterest-p'></i>");
+
+        $(".map-list > .icon-list > li").hover(function () {
+            $(this).css("background", "#00c8c8");
+
+        }, function () {
+            $(this).css("background", "#727272");
         })
 
+
+
     </script>
+
+
+
+
     <!-- End:: local_stores_section -->
 
 

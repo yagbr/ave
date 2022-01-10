@@ -24,7 +24,7 @@ $color-eee: #eeeeee;
 
 ::selection{
     background-color: $primary-color;
-    text-align: $color-fff;
+    color: $color-fff;
 }
 // ------------------- Home --------------------- //
 
@@ -799,8 +799,6 @@ $color-eee: #eeeeee;
 
 // ------------------- local stores --------------------- //
 // ----- start::local_stores_section --- //
-
-
 .city_details {
     h4{
         font-size: 18px;
@@ -854,6 +852,82 @@ $color-eee: #eeeeee;
         font-size: 14px;
     }
 }
+
+
 // ----- end:: local_stores_section --- //
 
+// ----- start::local_stores_map --- //
+.map-section{
+    background-color: $color-f8f8f8;
+    padding: 41px 47px 91px 41px;
 
+    @media (max-width:991px) and(min-width:429px) {
+        padding: 41px 47px 61px 41px;
+    }
+
+    @media (max-width:428px) {
+        padding:41px 41px 61px 36px;
+    }
+    
+}
+
+.map {
+    iframe {
+        // height: 450px;
+        height: 100%;
+    }
+}
+
+.map-list {
+
+    i{
+        color:  $color-575153;
+    }
+    a{
+        color:  $color-8e8c8c;
+        font-size: 14px;
+
+        @media (max-width:428px) {
+            font-size: 12px;
+        }
+    }
+}
+
+// ----- end:: local_stores_map --- //
+
+
+.dept {
+    a{
+         margin-left: 10px;
+     }
+
+      i {
+          font-size: 16px;
+          @media (max-width:428px) {
+            font-size: 14px;
+        }
+      }
+}
+
+.dept > *{
+  display: inline-block;
+  vertical-align: middle;
+  }
+
+.icon-list  {
+    li{
+        width: 30px;
+        height: 30px;
+        background-color: $color-727272;
+        border-radius: 50%;
+        
+        i{
+            color: $color-fff;
+            font-size: 18px;
+            @media (max-width:991px) {
+                font-size: 16px;
+            }
+        }
+    }
+      
+}

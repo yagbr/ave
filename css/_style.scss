@@ -868,7 +868,6 @@ $color-eee: #eeeeee;
     @media (max-width:428px) {
         padding:41px 41px 61px 36px;
     }
-    
 }
 
 .map {
@@ -893,9 +892,6 @@ $color-eee: #eeeeee;
     }
 }
 
-// ----- end:: local_stores_map --- //
-
-
 .dept {
     a{
          margin-left: 10px;
@@ -912,7 +908,7 @@ $color-eee: #eeeeee;
 .dept > *{
   display: inline-block;
   vertical-align: middle;
-  }
+}
 
 .icon-list  {
     li{
@@ -931,3 +927,144 @@ $color-eee: #eeeeee;
     }
       
 }
+
+// ----- end:: local_stores_map --- //
+
+
+// ------------------- look book --------------------- //
+
+// ----- start::tab --- //
+
+.populer-list1{
+    top: -100px;
+}
+
+.icon1 {
+    a{
+        width: 30px;
+        height: 30px;
+    }
+}
+
+.img-c1 {
+    a{
+        background-color: #ffffff;
+        color: #1b1b1c;
+    }
+}
+
+.img-c2 {
+    a{
+        background-color: #333;
+        color: #e8e8e8;
+    }
+}
+
+.img-c3 {
+    a{
+        background-color: #ffffff;
+        color: #2c2c2c;
+    }
+}
+
+.img-c4 {
+    a{
+        background-color: #333;
+        color: #00b2b3;
+    }
+}
+
+.img-c5 {
+    a{
+        background-color: #333;
+        color: #bf5239;
+    }
+}
+
+.img-c6 {
+    a{
+        background-color: #fff;
+        color: #1b2a2e;
+    }
+}
+
+.popular-img1 {
+    .populer-list1 {
+        transition:.3s linear;
+        opacity: 0;
+    }
+
+    &:hover{
+        .populer-list1 {
+            opacity: 1;
+        }
+    }
+}
+
+.fa-circle {
+    color: $color-fff;
+  }
+
+.look-bg{
+    // background-position: right -7em bottom -103px;
+    // background-size: 109%;
+    height: 43.9vh;
+    background-size: 126%;
+    background-position: right -9rem bottom 56%; 
+    @media (max-width:2880px) and (min-width:2560px) {
+        height: 337.734px;
+    }
+
+    @media (max-width:1366px) and (min-width:1281px) {
+        height: 288.08px;
+    }
+
+    @media (max-width:1280px) and(min-width:1024px) {
+        height: 238.406px;
+        background-size: 138%;
+        background-position: right -9rem bottom 61%;
+    }
+
+    @media (max-width:425px) and (min-width:321px) {
+        background-size: 146%;
+    }
+
+    @media (max-width:320px) {
+        background-size: 150%;
+    }
+}
+
+.lookbg {
+    width: 100%;
+    overflow: hidden;
+    height: 100%;
+}
+
+.thediv1 {
+    img {
+        // @media (min-width:991px) {
+        //   height: 288px;
+        // }
+
+        @media (max-width:2880px) and (min-width:2560px) {
+                height: 337.734px;
+        }
+
+        @media (max-width:1366px) and (min-width:1281px) {
+            height: 288.08px;
+        }
+
+        @media (max-width:1280px) and(min-width:1024px) {
+            height: 238.406px;
+        }
+    }
+}
+
+.look-mt {
+    margin-top: -2.8%;
+    @media (max-width:991px) {
+        margin-top: 8.2%;
+    }
+}
+
+// ----- end:: tab--- //

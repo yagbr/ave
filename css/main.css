@@ -7890,6 +7890,10 @@ textarea.form-control-lg {
   background-image: url(../images/main-bg.png) !important;
 }
 
+.bg-img-look-bg1 {
+  background-image: url(../images/look-bg1.png) !important;
+}
+
 .bg-size-cover {
   background-size: cover !important;
 }
@@ -12127,10 +12131,117 @@ textarea.form-control-lg {
   }
 }
 
-/* Always set the map height explicitly to define the size of the div
-       * element that contains the map. */
-#map {
+.populer-list1 {
+  top: -100px;
+}
+
+.icon1 a {
+  width: 30px;
+  height: 30px;
+}
+
+.img-c1 a {
+  background-color: #ffffff;
+  color: #1b1b1c;
+}
+
+.img-c2 a {
+  background-color: #333;
+  color: #e8e8e8;
+}
+
+.img-c3 a {
+  background-color: #ffffff;
+  color: #2c2c2c;
+}
+
+.img-c4 a {
+  background-color: #333;
+  color: #00b2b3;
+}
+
+.img-c5 a {
+  background-color: #333;
+  color: #bf5239;
+}
+
+.img-c6 a {
+  background-color: #fff;
+  color: #1b2a2e;
+}
+
+.popular-img1 .populer-list1 {
+  transition: 0.3s linear;
+  opacity: 0;
+}
+.popular-img1:hover .populer-list1 {
+  opacity: 1;
+}
+
+.fa-circle {
+  color: #fff;
+}
+
+.look-bg {
+  height: 43.9vh;
+  background-size: 126%;
+  background-position: right -9rem bottom 56%;
+}
+@media (max-width: 2880px) and (min-width: 2560px) {
+  .look-bg {
+    height: 337.734px;
+  }
+}
+@media (max-width: 1366px) and (min-width: 1281px) {
+  .look-bg {
+    height: 288.08px;
+  }
+}
+@media (max-width: 1280px) and (min-width: 1024px) {
+  .look-bg {
+    height: 238.406px;
+    background-size: 138%;
+    background-position: right -9rem bottom 61%;
+  }
+}
+@media (max-width: 425px) and (min-width: 321px) {
+  .look-bg {
+    background-size: 146%;
+  }
+}
+@media (max-width: 320px) {
+  .look-bg {
+    background-size: 150%;
+  }
+}
+
+.lookbg {
+  width: 100%;
+  overflow: hidden;
   height: 100%;
 }
 
-/* Optional: Makes the sample page fill the window. *//*# sourceMappingURL=main.css.map */
+@media (max-width: 2880px) and (min-width: 2560px) {
+  .thediv1 img {
+    height: 337.734px;
+  }
+}
+@media (max-width: 1366px) and (min-width: 1281px) {
+  .thediv1 img {
+    height: 288.08px;
+  }
+}
+@media (max-width: 1280px) and (min-width: 1024px) {
+  .thediv1 img {
+    height: 238.406px;
+  }
+}
+
+.look-mt {
+  margin-top: -2.8%;
+}
+@media (max-width: 991px) {
+  .look-mt {
+    margin-top: 8.2%;
+  }
+}/*# sourceMappingURL=main.css.map */

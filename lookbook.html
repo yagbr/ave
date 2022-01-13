@@ -5,7 +5,6 @@
     <meta charset="UTF-8">
     <!-- <meta http-equiv="X-UA-Compatible" content="IE=edge"> -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script> -->
     <title>Document</title>
     <link rel="stylesheet" href="css/link.css">
 
@@ -180,7 +179,7 @@
             <div class="collapse navbar-collapse nav-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
                     <li class="nav-item dropdown ">
-                        <a class="nav-link dropdown-toggle  nav-color dr-to1 bg-no-repeat dr-to-nav f-f-montserrat"
+                        <a class="nav-link dropdown-toggle  nav-color bg-no-repeat   dr-to-nav  dr-to1 dr-to-nav f-f-montserrat"
                             href="#" id="navbarScrollingDropdown" role="button" data-bs-toggle="dropdown"
                             aria-expanded="false">
                             MENS
@@ -259,8 +258,8 @@
                             aria-expanded="false">
                             women
                         </a>
-                        <ul class="dropdown-menu dr-menu w-100 mt-lg-3 mt-2 border-0" aria-labelledby="
-                            navbarScrollingDropdown1">
+                        <ul class="dropdown-menu dr-menu w-100 mt-lg-3 mt-2 border-0"
+                            aria-labelledby="navbarScrollingDropdown1">
                             <li class="dr-m">
                                 <div class="row">
                                     <div class="col-6">
@@ -327,92 +326,359 @@
                         </ul>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link  f-f-montserrat active" href="#">THE BRAND</a>
+                        <a class="nav-link nav-color f-f-montserrat" href="#">THE BRAND</a>
                     </li>
 
-                    <li class="nav-item">
-                        <a class="nav-link nav-color f-f-montserrat" href="#">LOCAL STORES</a>
+
+
+                    <li class="nav-item dropdown ">
+                        <a class="nav-link dropdown-toggle dr-to1-active bg-no-repeat active dr-to-nav f-f-montserrat"
+                            href="#" id="navbarScrollingDropdown2" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Lookbook
+                        </a>
+                        <ul class="dropdown-menu  dropdown-menu-start dr-menu w-100 mt-lg-3 mt-2 border-0"
+                            aria-labelledby="navbarScrollingDropdown2">
+                            <li class="dr-m">
+                                <div class="row">
+                                    <div class="col-6">
+                                        <ul class="list-unstyled">
+                                            <li class="pb-2">
+                                                <a href="#"
+                                                    class="ave-d mb-4 nav-color fw-normal f-f-montserrat"></a>Our
+                                                Lookbooks
+                                            </li>
+                                            <li>
+                                                <a href="#"
+                                                    class="text-decoration-none nav-dr-color fw-light f-f-montserrat">Latest
+                                                    Posts (mixed)</a>
+                                            </li>
+                                            <li>
+                                                <a href="#"
+                                                    class="text-decoration-none nav-dr-color fw-light f-f-montserrat">Men’s
+                                                    Lookbook</a>
+                                            </li>
+                                            <li>
+                                                <a href="#"
+                                                    class="text-decoration-none nav-dr-color fw-light f-f-montserrat">Women’s
+                                                    Lookbook</a>
+                                            </li>
+
+                                        </ul>
+                                    </div>
+
+                                    <div class="col-6">
+                                        <ul class="list-unstyled">
+                                            <li class="pb-2"><a href="#" class="ave-d f-f-montserrat"></a>Your Lookbook
+                                            </li>
+                                            <li><a href="" class="text-decoration-none nav-dr-color f-f-montserrat">View
+                                                    and Edit</a>
+                                            </li>
+                                            <li><a href="" class="text-decoration-none nav-dr-color f-f-montserrat">
+                                                    Share</a></li>
+                                            <li><a href=""
+                                                    class="text-decoration-none nav-dr-color f-f-montserrat">Delete</a>
+                                            </li>
+
+                                        </ul>
+                                    </div>
+                                </div>
+
+                                <div class="sale  sale-1 w-100 h-100 text-center text-uppercase mt-lg-5 mt-3">
+                                    <h3 class="color-fff fw-bold mb-0">Autumn sale! </h3>
+                                    <span class="up color-fff fw-normal">up to 50% off</span>
+                                </div>
+
+                            </li>
+                        </ul>
                     </li>
 
-                    <li class="nav-item">
-                        <a class="nav-link nav-color f-f-montserrat" href="#">LOOK BOOK</a>
-                    </li>
                 </ul>
+
                 <form class="d-flex position-relative ms-lg-5">
                     <input class="form-control me-2 box-shadow-none rounded-0" type="search" placeholder="Search"
                         aria-label="Search">
                     <button class="btn search position-absolute end-0 pe-3" type="submit"><i
                             class="far fa-search"></i></button>
                 </form>
+
             </div>
         </div>
     </nav>
     <!-- end:: navbar -->
 
-    <!-- start:: local_stores_benner -->
-    <div class="mt-3">
-        <div class="main-section bg-img-main-img w-100 h-100 bg-size-cover">
-            <div class="container">
-                <div class="main-name text-center f-f-montserrat text-uppercase"></div>
+
+    <!--start:: tabs -->
+    <div class="pb-5">
+        <div class="container">
+            <!-- <hr class=""> -->
+            <div class="border-design mt-62"></div>
+            <ul class="nav nav-pills mb-3 mt-54" id="pills-tab" role="tablist">
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link nav-link-tab active bg-transparent text-uppercase ps-0"
+                        id="pills-popular-tab" data-bs-toggle="pill" data-bs-target="#pills-popular" type="button"
+                        role="tab" aria-selected="true">latest</button>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link nav-link-tab text-uppercase bg-transparent" id="pills-arrivals-tab"
+                        data-bs-toggle="pill" data-bs-target="#pills-arrivals" type="button" role="tab"
+                        aria-controls="pills-arrivals" aria-selected="false">most liked </button>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link nav-link-tab text-uppercase bg-transparent" id="pills-sellers-tab"
+                        data-bs-toggle="pill" data-bs-target="#pills-sellers" type="button" role="tab"
+                        aria-controls="pills-sellers" aria-selected="false">best sellers</button>
+                </li>
+
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link nav-link-tab text-uppercase bg-transparent" id="pills-offers-tab"
+                        data-bs-toggle="pill" data-bs-target="#pills-offers" type="button" role="tab"
+                        aria-controls="pills-offers" aria-selected="false">price low to high </button>
+                </li>
+
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link nav-link-tab text-uppercase bg-transparent" id="pills-high-tab"
+                        data-bs-toggle="pill" data-bs-target="#pills-high" type="button" role="tab"
+                        aria-controls="pills-high" aria-selected="false">price high to lowh </button>
+                </li>
+            </ul>
+            <div class="tab-content" id="pills-tabContent">
+                <div class="tab-pane fade show active" id="pills-popular" role="tabpanel"
+                    aria-labelledby="pills-popular-tab">
+                    <div class="row">
+                        <div class="col-lg-6">
+                            <div class="row">
+                                <div class="col-lg-6 mb-lg-0 mb-3">
+                                    <div class="popular1">
+                                        <div class="">
+                                            <div class="thediv thediv1 d-flex justify-content-center"></div>
+                                            <div class="popular-price1">
+                                                <sup>REF</sup>M1
+                                            </div>
+
+                                            <div class="populer-list1 text-center  pb-2">
+                                                <ul>
+                                                    <li></li>
+                                                    <li></li>
+                                                </ul>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-lg-6 mb-lg-0 mb-3">
+                                    <div class="popular1">
+                                        <div class="">
+                                            <div class="thediv thediv1  d-flex justify-content-center"></div>
+                                            <div class="popular-price1">
+                                                <sup>REF</sup>W1
+                                            </div>
+
+                                            <div class="populer-list1 text-center  pb-2">
+                                                <ul>
+                                                    <li></li>
+                                                    <li></li>
+                                                </ul>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-6 mb-lg-0">
+                            <div class="popular1 lookbg">
+                                <div class="ps-3 pt-3 bg-img-look-bg1 w-100 bg-no-repeat look-bg">
+                                    <div class="row">
+                                        <div class="col-lg-6">
+                                            <div class="lookbook-title">
+                                                <div>
+                                                    <span class="f-f-montserrat"></span>
+                                                </div>
+                                                <div>
+
+                                                </div>
+
+                                                <p class="mt-2 f-f-roboto">
+                                                </p>
+
+                                                <p class="mt-2 f-f-roboto">
+                                                </p>
+                                                <button
+                                                    class="btn viewmore text-center rounded-0 text-uppercase fw-normal f-f-montserrat">viewnow</button>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-6"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row look-mt">
+                        <div class="col-lg-3">
+                            <div class="popular1">
+                                <div class="">
+                                    <div class="thediv thediv1 d-flex justify-content-center"></div>
+                                    <div class="popular-price1">
+                                        <sup>REF</sup>M1
+                                    </div>
+
+                                    <div class="populer-list1 text-center  pb-2">
+                                        <ul>
+                                            <li></li>
+                                            <li></li>
+                                        </ul>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3">
+                            <div class="popular1">
+                                <div class="">
+                                    <div class="thediv thediv1 d-flex justify-content-center"></div>
+                                    <div class="popular-price1">
+                                        <sup>REF</sup>M1
+                                    </div>
+
+                                    <div class="populer-list1 text-center  pb-2">
+                                        <ul>
+                                            <li></li>
+                                            <li></li>
+                                        </ul>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3">
+                            <div class="popular1">
+                                <div class="">
+                                    <div class="thediv thediv1 d-flex justify-content-center"></div>
+                                    <div class="popular-price1">
+                                        <sup>REF</sup>M1
+                                    </div>
+
+                                    <div class="populer-list1 text-center  pb-2">
+                                        <ul>
+                                            <li></li>
+                                            <li></li>
+                                        </ul>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3">
+                            <div class="popular1">
+                                <div class="">
+                                    <div class="thediv thediv1 d-flex justify-content-center"></div>
+                                    <div class="popular-price1">
+                                        <sup>REF</sup>M1
+                                    </div>
+
+                                    <div class="populer-list1 text-center  pb-2">
+                                        <ul>
+                                            <li></li>
+                                            <li></li>
+                                        </ul>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="tab-pane fade" id="pills-arrivals" role="tabpanel" aria-labelledby="pills-arrivals-tab">...
+                </div>
+                <div class="tab-pane fade" id="pills-sellers" role="tabpanel" aria-labelledby="pills-sellers-tab">...
+                </div>
+                <div class="tab-pane fade" id="pills-offers" role="tabpanel" aria-labelledby="pills-offers-tab">...
+                </div>
+
+                <div class="tab-pane fade" id="pills-high" role="tabpanel" aria-labelledby="pills-high-tab">...
+                </div>
             </div>
+
+            <!-- <hr class=""> -->
+            <div class="border-design  z-in--1"></div>
         </div>
+
     </div>
 
-    <!-- end:: local_stores_benner -->
+    <!-- end::tab -->
 
-    <!-- start:: local_stores_section -->
-    <div class="container mt-5">
-        <div class="row justify-content-center">
-            <div class="col-lg-10">
-                <div class="row">
-                    <div class="col-md-4  mb-md-0 mb-5">
-                        <div class="city_details"></div>
+    <!-- start:: lookbook -->
+    <!-- <div class="mt-lg-0 mt-5">
+        <div class="container-fluid">
+            <div class="row justify-content-center">
+                <div class="col-lg-4 col-md-8 ps-lg-0 mb-lg-0 mb-4">
+                    <div class="lookbook-bg">
+                        <div class="row">
+                            <div class="col-6">
+                                <div class="lookbook-img"></div>
+                            </div>
+                            <div class="col-6 text-end d-flex align-items-center justify-content-end">
+                                <div class="lookbook-title">
+
+                                    <div class="f-f-montserrat"></div>
+                                    <span class="f-f-montserrat"></span>
+                                    <p class="mt-2 f-f-roboto"></p>
+                                    <button
+                                        class="btn viewmore text-center rounded-0 text-uppercase fw-normal f-f-montserrat">viewnow</button>
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                    <div class="col-md-4 mb-md-0 mb-5">
-                        <div class="city_details"></div>
+                </div>
+                <div class="col-lg-4 col-md-8  mb-lg-0 mb-4">
+                    <div class="lookbook-bg overflow-hidden">
+                        <div class="row">
+                            <div class="col-6 order-lg-0 order-3 d-flex justify-content-lg-start justify-content-end">
+                                <div class="lookbook-img"></div>
+                            </div>
+                            <div
+                                class="col-6 text-lg-end  text-start  d-flex align-items-center justify-content-end order-lg-0 order-2">
+                                <div class="lookbook-title">
+                                    <div class="f-f-montserrat"></div>
+                                    <span
+                                        class="f-f-montserrat d-flex justify-content-lg-end justify-content-start"></span>
+                                    <p class="mt-2 f-f-roboto"></p>
+                                    <button
+                                        class="btn viewmore text-center rounded-0 text-uppercase fw-normal f-f-montserrat">viewnow</button>
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                    <div class="col-md-4 mb-md-0 ">
-                        <div class="city_details"></div>
+                </div>
+                <div class="col-lg-4 col-md-8 mb-lg-0 pe-lg-0 mb-4">
+                    <div class="lookbook-bg">
+                        <div class="row">
+                            <div class="col-6">
+                                <div class="lookbook-img"></div>
+                            </div>
+                            <div class="col-6 text-end d-flex align-items-center justify-content-end">
+                                <div class="lookbook-title">
+                                    <div class="f-f-montserrat"></div>
+                                    <span class="f-f-montserrat"></span>
+                                    <p class="mt-2 f-f-roboto">
+                                    </p>
+                                    <button
+                                        class="btn viewmore text-center rounded-0 text-uppercase fw-normal f-f-montserrat">viewnow</button>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
-    <!-- end:: local_stores_section -->
+    </div> -->
 
-    <!-- start:: local_stores_map -->
-    <div class="container-fluid mt-5">
-        <div class="row">
-            <div class="col-lg-8 col-md-6 ps-0 pe-0">
-                <div class="map" id="map"></div>
-            </div>
-            <div class="col-lg-4 col-md-6 map-section">
-                <div class="city_details"></div>
-                <div>
-
-
-
-                    <ul>
-                        <li></li>
-                        <li></li>
-                        <li></li>
-                        <li></li>
-                        <li></li>
-                    </ul>
-
-                    <ul>
-                        <li></li>
-                        <li></li>
-                        <li></li>
-                        <li></li>
-                    </ul>
-
-
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- end:: local_stores_map -->
+    <!-- end:: lookbook -->
 
     <!-- start:: footer -->
     <footer class="footer-bg pt-100">
@@ -491,82 +757,96 @@
 
 
     <script src="./node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
-
     <script src="js/jquery-3.6.0.min.js"></script>
     <script src="js/topbar.js"></script>
     <script src="js/navbar.js"></script>
+    <script src="js/lookbook.js"></script>
     <script src="js/footer.js"></script>
 
 
 
-
-    <!-- start::  local_stores_benner -->
+    <!--start:: tab -->
     <script>
-        $(".main-name").wrapInner("<h4><strong>Local</strong> stores</h4>  <h6>Find a store near youe</h6>");
-        $(".main-name > h4").addClass("color-fff").addClass("fw-light");
-        $(".main-name > h4 > strong").addClass("fw-bold");
-        $(".main-name > h6").addClass("color-fff").addClass("fw-normal");
-    </script>
-
-    <!-- End:: local_stores_benner -->
-
-    <!--  start:: local_stores_section -->
-    <script>
-        $(".city_details").eq(0).wrapInner("<h4>London</h4> <h6>180-182 Regent Street, London, W1B 5BT</h6> <p>Lorem ipsum dolor sit amet, consectetur adipiscing esi elit. Vivamus at arcu sem. Vestibulum ornare eleifendit massa, nec tempor odio. Fusce posuere nunc iaculis ligula viverra iaculis. Aliquam erat volutpat.</p> <button type='button' class='btn view_details f-f-montserrat rounded-0 text-uppercase'>view Details</button>");
-        $(".city_details").eq(1).wrapInner("<h4>New York</h4> <h6>09 Columbus Circle, New York, NY 10023</h6> <p>Nunc non posuere nisl. Etiam finibus vel dui nec lobortis. Aliquam egestas, sem quis condimentum venenatis, erat leo fermentum dolor, non sollicitudin massa mi eu nibh. Nullam vitae aliquam dui, non sodales nisl.</p> <button type='button' class='btn view_details f-f-montserrat rounded-0 text-uppercase'>view Details</button>");
-        $(".city_details").eq(2).wrapInner("<h4>Paris</h4> <h6>133 Rue Saint-Honoré, 75001 Paris</h6> <p>Ut interdum fermentum blandit. Donec nec lacus egetit mi rhoncus eleifend. Curabitur laoreet nisl eget rutruml auctor. Vestibulum ante ipsum primis in faucibus orcip luctus et ultrices posuere cubilia curae cras ligula.</p> <button type='button' class='btn view_details f-f-montserrat rounded-0 text-uppercase'>view Details</button>");
-        $(".city_details").eq(3).wrapInner("<h4>London</h4> <h6>180-182 Regent Street, London, W1B 5BT</h6> <p>Lorem ipsum dolor sit amet, consectetur adipiscing esi elit. Vivamus at arcu sem. Vestibulum ornare eleifendit massa, nec tempor odio. Fusce posuere nunc iaculis ligula viverra iaculis. Aliquam erat volutpat.</p>");
-        $(".city_details > h4 , .city_details > h6").addClass("f-f-montserrat  text-uppercase");
-        $(".city_details > p").addClass("f-f-roboto");
-
-        $(".view_details").hover(function () {
-            $(this).css("border-color", "#00c8c8").css("background-color", "#00c8c8").css("color", "#ffffff");
+        $(".nav-link-tab").hover(function () {
+            $(this).css("color", "#00c8c8");
         }, function () {
-            $(this).css("border-color", "#737373").css("background-color", "transparent").css("color", "#454647");
-
-        });
-
-        $(".map").wrapInner("<iframe src='https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2483.040684901662!2d-0.14200518422985065!3d51.51246957963597!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x487604d5742d021f%3A0x6c7d54766b4df30b!2sAvenue%20Fashion!5e0!3m2!1sen!2sin!4v1641541746427!5m2!1sen!2sin'   style='border:0;' allowfullscreen='' loading='lazy' zoom='0'></iframe>");
-        $(".map > iframe").addClass("w-100");
-
-        $(".map-section > div:nth-child(2)").addClass("map-list");
-
-        $(".map-list > ul").eq(0).addClass("map-d list-unstyled");
-        $(".map-list > .map-d > li").addClass("dept");
-        $(".map-list > ul > li:nth-child(1)").eq(0).wrapInner("<i class='fas fa-map-marker-alt'></i> <a href='http://maps.google.com/?q=1200 180-182 Regent Street, London, W1B 5BT' target='_blank'>180-182 Regent Street, London, W1B 5BT</a>");
-        $(".map-list > ul > li:nth-child(2)").eq(0).wrapInner("<i class='fas fa-phone-alt'></i><a href='tel:+0123-456-789'>0123-456-789</a>");
-        $(".map-list > ul > li:nth-child(3)").eq(0).wrapInner("<i class='fas fa-link fa-rotate-270'></i><a href='https://www.yourwebsite.com/' target='_blank'>www.yourwebsite.com</a>");
-        $(".map-list > ul > li:nth-child(4)").eq(0).wrapInner("<i class='far fa-envelope'></i><a href='mailto:someone@example.com'>support@yourwebsite.com</a>");
-        $(".map-list > ul > li:nth-child(5)").eq(0).wrapInner("<i class='far fa-clock'></i> <a href=''>Monday-Friday: 9am to 6pm  Saturday: 10am to 6pm  Sunday: 10am to 2pm");
-        $(".map-list > ul > li > a").addClass("text-decoration-none");
-        $(".map-list > ul > li").eq(0).addClass("mb-2");
-        $(".map-list > ul > li:nth-child(5)").eq(0).addClass("d-flex mt-2");
-        $(".map-list > ul > li:nth-child(5) > i ").addClass("mt-1");
-
-        $(".map-list > ul").eq(1).addClass("list-unstyled d-flex icon-list");
-        $(".map-list > .icon-list > li").addClass("me-2 d-flex justify-content-center align-items-center cursor-pointer");
-        $(".map-list > .icon-list > li:nth-child(1)").wrapInner("<i class='fab fa-facebook-f'></i>");
-        $(".map-list > .icon-list > li:nth-child(2)").wrapInner("<i class='fab fa-twitter'></i>");
-        $(".map-list > .icon-list > li:nth-child(3)").wrapInner("<i class='fab fa-instagram'></i>");
-        $(".map-list > .icon-list > li:nth-child(4)").wrapInner("<i class='fab fa-pinterest-p'></i>");
-
-        $(".map-list > .icon-list > li").hover(function () {
-            $(this).css("background", "#00c8c8");
-
-        }, function () {
-            $(this).css("background", "#727272");
+            $(this).css("color", "#727272");
         })
+    </script>
 
+    <script>
+        $(".popular1 > div").addClass("popular-img1").addClass("position-relative");
+    </script>
+
+    <script>
+        $(".thediv").eq(0).append("<img class='img-fluid' src='images/1.png'>");
+        $(".thediv").eq(1).append("<img class='img-fluid' src='images/3.png'>");
+        $(".thediv").eq(2).append("<img class='img-fluid' src='images/2.png'>");
+        $(".thediv").eq(3).append("<img class='img-fluid' src='images/6.png'>");
+        $(".thediv").eq(4).append("<img class='img-fluid' src='images/4.png'>");
+        $(".thediv").eq(5).append("<img class='img-fluid' src='images/5.png'>");
+        $(".thediv").addClass("position-relative");
+        $(".popular-text").addClass("f-f-montserrat");
+    </script>
+
+    <script>
+        $(".popular1 > div > div:nth-child(2n)").addClass("popular-price");
 
 
     </script>
 
+    <script>
+        $(".populer-list1 > ul").addClass("icon1 list-unstyled d-flex justify-content-center");
+        $(".populer-list1").addClass("position-relative");
+        $(".populer-list1 > ul").addClass("icon1");
+        $(".icon1 > li").addClass("me-2");
+
+        $(".icon1").eq(0).addClass("img-c1");
+        $(".icon1").eq(1).addClass("img-c2");
+        $(".icon1").eq(2).addClass("img-c3");
+        $(".icon1").eq(3).addClass("img-c4");
+        $(".icon1").eq(4).addClass("img-c5");
+        $(".icon1").eq(5).addClass("img-c6");
+
+        $(".populer-list1 > ul > li:nth-child(1)").wrapInner("<a href=''><i class='fas fa-info'></i></a>");
+        $(".populer-list1 > ul > li:nth-child(2)").wrapInner("<a href=''><i class='fas fa-heart'></i></a>");
+        $(".populer-list1 > ul > li:nth-child(1) > a").addClass("d-flex justify-content-center align-items-center text-decoration-none");
+        $(".populer-list1 > ul > li:nth-child(2) > a").addClass("d-flex justify-content-center align-items-center text-decoration-none");
+
+
+        $(".populer-list1 > ul > li > a").addClass("rounded-circle");
+
+    </script>
+
+    <script>
+        $(".img-c").mouseover(function () {
+            $(this).css("background-color", "#00c8c8").css("transition", " 0.3s");
+        }).mouseout(function () {
+            $(this).css("background-color", "#727272");
+        });
+    </script>
+
+    <script>
+        $('.popular-price1').each(function () {
+            $(this).wrapInner('<h4></h4>');
+        })
+    </script>
+
+    <script>
+        $(".popular-price1 > h4").addClass("color-9a9a").addClass("position-absolute").addClass("f-f-montserrat");
+    </script>
 
 
 
-    <!-- End:: local_stores_section -->
+    <script>
+        $(".thediv").hover(function () {
+            $(this).css("box-shadow", "0px 0px 9px 0px rgb(0 0 0 / 14%)").css("transition", "0.5s");
+        }, function () {
+            $(this).css("box-shadow", "none");
+        })
+    </script>
 
-
+    <!--End:: tab -->
 
 </body>
 
